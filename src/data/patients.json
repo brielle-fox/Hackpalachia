@@ -4,10 +4,32 @@
     "displayName": "Linda (fictional)",
     "age": 52,
     "town": "Glouster",
-    "location": { "lat": 39.5034, "lng": -82.0846 },
+    "location": { "lat": 39.50313, "lng": -82.08459 },
     "insurance": "medicaid",
     "hasHomeInternet": true,
     "portalConnected": false,
-    "needs": ["primary_care", "diabetes_care"]
+    "needs": ["primary_care", "diabetes_care", "eye_care"]
+  },
+  {
+    "id": "p-ray",
+    "displayName": "Ray (fictional)",
+    "age": 61,
+    "town": "Pomeroy",
+    "location": { "lat": 39.02805, "lng": -82.03422 },
+    "insurance": "medicare",
+    "hasHomeInternet": false,
+    "portalConnected": false,
+    "needs": ["primary_care", "pharmacy"]
+  },
+  {
+    "id": "p-dana",
+    "displayName": "Dana (fictional)",
+    "age": 47,
+    "town": "McArthur",
+    "location": { "lat": 39.24646, "lng": -82.47849 },
+    "insurance": "private",
+    "hasHomeInternet": true,
+    "portalConnected": false,
+    "needs": ["behavioral_health", "womens_health"]
   }
 ]
