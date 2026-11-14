@@ -24,8 +24,9 @@ export default function App() {
         <Route path="/provider" element={<Dashboard />} />
         <Route path="/provider/requirements/new" element={<NewRequirement />} />
         <Route path="/provider/requirements/:id" element={<RequirementPage />} />
-        <Route path="/kiosk" element={<Kiosk />} />
       </Route>
+      {/* Shared-computer mode is full-screen: no site header or nav (MASTER_PLAN WS5). */}
+      <Route path="/kiosk" element={<Kiosk />} />
       {/* Map-heavy pages opt into full width (list + map split view). */}
       <Route element={<Layout fullWidth />}>
         <Route path="/patient" element={<Search />} />

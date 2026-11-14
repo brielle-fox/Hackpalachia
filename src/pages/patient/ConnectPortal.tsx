@@ -25,7 +25,7 @@ export default function ConnectPortal() {
   const navigate = useNavigate();
   const [params] = useSearchParams();
   const ret = params.get('return');
-  const patientId = useStore(s => s.currentPatientId);
+  const patientId = useStore(s => s.currentPatientId ?? s.patients[0]?.id ?? null);
   const connected = useStore(s => s.patients.find(p => p.id === s.currentPatientId)?.portalConnected ?? false);
   const connectPortal = useStore(s => s.connectPortal);
   const [q, setQ] = useState('');

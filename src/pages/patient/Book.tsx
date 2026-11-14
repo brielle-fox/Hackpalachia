@@ -138,8 +138,12 @@ export default function Book() {
                 onChoose={(m: CareMode, ap?: string) => {
                   setMode(m);
                   if (ap) setApId(ap);
-                  setSlot(null);
-                  setDay(null);
+                  // Picking the library suggestion pre-selects the slot the banner showed, so Confirm is one tap away.
+                  const first = m === 'telehealth_access_point'
+                    ? accessPoints.find((a) => a.id === (ap ?? suggestion.accessPoint?.id))?.openSlots[0]
+                    : undefined;
+                  setSlot(first ?? null);
+                  setDay(first ? first.slice(0, 10) : null);
                 }}
               />
               {mode !== suggestion.recommended && (
