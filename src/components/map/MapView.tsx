@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import L from 'leaflet';
 import { MapContainer, Marker, Popup, TileLayer, Tooltip, useMap } from 'react-leaflet';
 import { Clock } from 'lucide-react';
@@ -166,11 +166,24 @@ function MapBehavior({
 }) {
   const map = useMap();
 
-  // Grey-tile fix: recompute size on mount, window resize, and whenever the container changes size
-  // (e.g. a List/Map toggle reveals a hidden map).
+  const fitAll = useRef<() => void>(() => {});
+  fitAll.current = () => {
+    if (!fit || points.length === 0) return;
+    const all = origin ? [...points, origin] : points;
+    map.fitBounds(L.latLngBounds(all.map((p) => [p.lat, p.lng])), { padding: [30, 30], maxZoom: 12 });
+  };
+
+  // Grey-tile fix: recompute size on mount, window resize, and whenever the container changes size.
+  // A map mounted while hidden (e.g. behind a List/Map toggle) fit itself at 0×0, so re-fit when it appears.
   useEffect(() => {
     const el = map.getContainer();
-    const fixSize = () => map.invalidateSize();
+    let wasHidden = el.clientWidth === 0;
+    const fixSize = () => {
+      map.invalidateSize();
+      const hidden = el.clientWidth === 0;
+      if (wasHidden && !hidden) fitAll.current();
+      wasHidden = hidden;
+    };
     fixSize();
     window.addEventListener('resize', fixSize);
     const ro = new ResizeObserver(fixSize);
@@ -181,12 +194,8 @@ function MapBehavior({
     };
   }, [map]);
 
-  useEffect(() => {
-    if (!fit || points.length === 0) return;
-    const all = origin ? [...points, origin] : points;
-    map.fitBounds(L.latLngBounds(all.map((p) => [p.lat, p.lng])), { padding: [30, 30], maxZoom: 12 });
-    // markerKey captures the marker set (points/origin derive from the same props), so it alone re-fits.
-  }, [map, markerKey, fit]);
+  // markerKey captures the marker set (points/origin derive from the same props), so it alone re-fits.
+  useEffect(() => fitAll.current(), [map, markerKey, fit]);
 
   useEffect(() => {
     if (!selected) return;
