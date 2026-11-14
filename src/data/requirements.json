@@ -1,1 +1,168 @@
-{ "requirements": [], "matches": [] }
+{
+ "requirements": [
+  {
+   "id": "req-demo",
+   "createdByProviderId": "hopewell-the-plains",
+   "patientRef": "Patient #A-104",
+   "serviceType": "eye_care",
+   "needs": [
+    {
+     "kind": "equipment",
+     "label": "Portable retinal camera"
+    },
+    {
+     "kind": "personnel",
+     "label": "Retinal imaging technician"
+    }
+   ],
+   "nearTown": "Glouster",
+   "nearLocation": {
+    "lat": 39.50313,
+    "lng": -82.08459
+   },
+   "windowStart": "2026-11-17",
+   "windowEnd": "2026-11-28",
+   "status": "open",
+   "note": "Annual diabetic eye exam: no retinal camera in-house"
+  },
+  {
+   "id": "req-sched",
+   "createdByProviderId": "hopewell-pomeroy",
+   "patientRef": "Cohort: 14 patients (flu + A1C)",
+   "serviceType": "diabetes_care",
+   "needs": [
+    {
+     "kind": "personnel",
+     "label": "Registered nurse"
+    },
+    {
+     "kind": "equipment",
+     "label": "Mobile clinic van"
+    }
+   ],
+   "nearTown": "Pomeroy",
+   "nearLocation": {
+    "lat": 39.02757,
+    "lng": -82.03349
+   },
+   "windowStart": "2026-11-19",
+   "windowEnd": "2026-11-19",
+   "status": "scheduled",
+   "matchId": "req-sched-m0",
+   "note": "Flu shot + A1C check pop-up in Meigs County"
+  },
+  {
+   "id": "req-incoming",
+   "createdByProviderId": "hopewell-nelsonville",
+   "patientRef": "Patient #N-221",
+   "serviceType": "primary_care",
+   "needs": [
+    {
+     "kind": "personnel",
+     "label": "Registered nurse"
+    },
+    {
+     "kind": "location",
+     "label": "Exam room"
+    }
+   ],
+   "nearTown": "Nelsonville",
+   "nearLocation": {
+    "lat": 39.45868,
+    "lng": -82.23182
+   },
+   "windowStart": "2026-11-18",
+   "windowEnd": "2026-11-25",
+   "status": "matched",
+   "note": "Wound-care follow-up; our nurse is out on leave"
+  },
+  {
+   "id": "req-open",
+   "createdByProviderId": "hopewell-mcarthur",
+   "patientRef": "Patient #V-310",
+   "serviceType": "behavioral_health",
+   "needs": [
+    {
+     "kind": "personnel",
+     "label": "Behavioral health counselor"
+    },
+    {
+     "kind": "equipment",
+     "label": "Telehealth cart"
+    }
+   ],
+   "nearTown": "McArthur",
+   "nearLocation": {
+    "lat": 39.24646,
+    "lng": -82.47849
+   },
+   "windowStart": "2026-11-20",
+   "windowEnd": "2026-12-04",
+   "status": "open",
+   "note": "Counseling intake for a Vinton County patient"
+  }
+ ],
+ "matches": [
+  {
+   "id": "req-sched-m0",
+   "requirementId": "req-sched",
+   "partnerProviderIds": [
+    "ou-heritage-community-clinic",
+    "athens-city-county-health-dept"
+   ],
+   "coverage": [
+    {
+     "need": {
+      "kind": "personnel",
+      "label": "Registered nurse"
+     },
+     "providerId": "athens-city-county-health-dept",
+     "resourceId": "athens-city-county-health-dept-r1"
+    },
+    {
+     "need": {
+      "kind": "equipment",
+      "label": "Mobile clinic van"
+     },
+     "providerId": "ou-heritage-community-clinic",
+     "resourceId": "ou-heritage-community-clinic-r1"
+    }
+   ],
+   "uncovered": [],
+   "score": 87,
+   "approxDriveMinutes": 42,
+   "proposedSiteName": "Hopewell Health Centers \u2013 Pomeroy Dental, Primary & Behavioral Health (parking lot)",
+   "status": "accepted"
+  },
+  {
+   "id": "req-incoming-m0",
+   "requirementId": "req-incoming",
+   "partnerProviderIds": [
+    "hopewell-the-plains"
+   ],
+   "coverage": [
+    {
+     "need": {
+      "kind": "personnel",
+      "label": "Registered nurse"
+     },
+     "providerId": "hopewell-the-plains",
+     "resourceId": "hopewell-the-plains-r1"
+    },
+    {
+     "need": {
+      "kind": "location",
+      "label": "Exam room"
+     },
+     "providerId": "hopewell-the-plains",
+     "resourceId": "hopewell-the-plains-r3"
+    }
+   ],
+   "uncovered": [],
+   "score": 96,
+   "approxDriveMinutes": 16,
+   "proposedSiteName": "Hopewell Health Centers \u2013 Main Clinic (Appalachian Family Life Center)",
+   "status": "proposed"
+  }
+ ]
+}
