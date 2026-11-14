@@ -50,5 +50,5 @@ export const fmtTime = (d: Date) => d.toLocaleTimeString('en-US', { hour: 'numer
 export const fmtDayShort = (d: Date) => d.toLocaleDateString('en-US', { weekday: 'short' });
 export const fmtDayLong = (d: Date) => d.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 
-/** "Linda (fictional)" → "Linda" */
+/** "Cindy (fictional)" → "Cindy" */
 export const firstName = (displayName: string) => displayName.replace(/\s*\(.*\)$/, '').split(' ')[0];

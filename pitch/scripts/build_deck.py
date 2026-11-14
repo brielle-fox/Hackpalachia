@@ -94,8 +94,8 @@ notes(problem,
       "Time: ~1:00")
 
 # ---------- 03 Journey ----------
-set_text(journey, 6, "Linda's search for a doctor stalls at “they're not taking patients.”")
-set_text(journey, 9, "Linda, 52, Glouster")
+set_text(journey, 6, "Cindy's search for a doctor stalls at “they're not taking patients.”")
+set_text(journey, 9, "Cindy, 52, Glouster")
 set_text(journey, 10, "Fictional composite. Medicaid, type 2 diabetes. Her doctor retired; she needs a new one. Spotty home internet.", size=14)
 set_text(journey, 12, "Clinic front desk, nearby FQHC, county health dept., Glouster library, her adult daughter, Medicaid plan", size=14)
 set_text(journey, 16, "Diabetes refills run out; she needs a new doctor.", size=14)
@@ -104,7 +104,7 @@ set_text(journey, 26, "2 aren't taking patients; 1 is 50 min away. Video calls d
 set_text(journey, 31, "Care delayed, A1c climbs, she ends up at urgent care or the ER.", size=14)
 set_text(journey, 33, "How often SE Ohio listings are actually out of date. Our directory-accuracy evidence is national.")
 notes(journey,
-      "Label Linda clearly as a fictional composite.\n\n"
+      "Label Cindy clearly as a fictional composite.\n\n"
       "START: refills run out. TRY: Facebook group + plan directory. BREAKDOWN (orange card): two aren't taking new patients, "
       "the third is 50 minutes away, and video visits drop on her home connection. RESULT: delayed care, rising A1c, urgent care "
       "or ER: the system pays more for worse care.\n\n"
@@ -114,7 +114,7 @@ notes(journey,
 # ---------- 04 Solution ----------
 set_text(solution, 6, "See who's really taking patients nearby, and get seen even without home internet.")
 set_text(solution, 9, "Stale lists and dead ends: calls to providers who aren't taking patients, and video visits that fail on home internet.")
-set_text(solution, 13, "Linda filters “accepting · Medicaid,” sees “Confirmed 2 days ago,” books, and is offered a "
+set_text(solution, 13, "Cindy filters “accepting · Medicaid,” sees “Confirmed 2 days ago,” books, and is offered a "
                        "telehealth room at the Glouster library.", size=18)
 set_text(solution, 15, "A public operator (county health dept. or state rural-health program). Providers confirm "
                        "listings weekly; libraries host rooms; clinics pool equipment.", size=13)
@@ -122,7 +122,7 @@ set_text(solution, 17, "Any phone or a library computer. No app, no cost, no acc
 set_text(solution, 19, "Stale listings are flagged. Partner cancels → re-match or telehealth. Unsure? Call a "
                        "community health worker. People make every clinical decision.", size=13)
 notes(solution,
-      "Patient side: every listing shows when it was last confirmed, who verified it, and neighbors' reviews. Linda books; "
+      "Patient side: every listing shows when it was last confirmed, who verified it, and neighbors' reviews. Cindy books; "
       "because she has no home internet, CareBridge suggests a private telehealth room at the Glouster library with a staff helper.\n\n"
       "Provider side: her new clinic needs a diabetic eye screening. It has the nurse and the exam room but no retinal camera. "
       "CareBridge matches it with a partner that has a portable camera and technician: one trip, a screening day for several patients.\n\n"
@@ -130,10 +130,10 @@ notes(solution,
       "Time: ~1:00")
 
 # ---------- 05 Prototype ----------
-set_text(proto, 6, "Linda finds care, even when the internet and the van both fail.")
+set_text(proto, 6, "Cindy finds care, even when the internet and the van both fail.")
 set_text(proto, 8, ["[Screenshots of each demo beat go here — add before 2:45]",
                     "Live demo: [live URL]"])
-set_text(proto, 10, "Linda books a primary care visit; then her clinic arranges an eye screening.", size=14)
+set_text(proto, 10, "Cindy books a primary care visit; then her clinic arranges an eye screening.", size=14)
 set_text(proto, 12, "The “last confirmed” label, and the automatic switch to a library telehealth room.", size=14)
 set_text(proto, 14, "No home internet → library room. Van cancelled → re-match. Unsure → call a community health worker.", size=14)
 set_text(proto, 15, "Built: app, real-location map, matching, telehealth logic. Simulated: availability, reviews, "

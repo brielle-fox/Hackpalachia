@@ -7,7 +7,7 @@ Built against the MASTER_PLAN Section 4 contract in a harness. Type-check clean.
 - `src/components/telehealth/`: `CareModeBanner`, `AccessPointCard`, `MockVideoCall`, `PortalConsent`, `useIdleTimer`, `Chip`, `icons`
 - `src/pages/patient/AccessPoints.tsx` (`/patient/telehealth`), `src/pages/patient/ConnectPortal.tsx` (`/patient/connect`), `src/pages/Kiosk.tsx` (`/kiosk`)
 
-## Verified behaviour (Linda → Hopewell The Plains, about 19 min)
+## Verified behaviour (Cindy → Hopewell The Plains, about 19 min)
 | Case | Recommended |
 |---|---|
 | Flags off, diabetes care | `in_person` (alternatives: home video, library) |

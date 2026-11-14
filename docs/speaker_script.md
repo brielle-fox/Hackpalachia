@@ -28,7 +28,7 @@ About 5 minutes of slides and 3 minutes of live demo, with a hard cap of **8:00*
 
 ## 1:30 – 2:15 · Slide 3: Today's Journey
 
-> "Meet Linda. She's a composite, not a real patient. She's 52, lives in Glouster, has Medicaid and type 2 diabetes, and her doctor just retired.
+> "Meet Cindy. She's a composite, not a real patient. She's 52, lives in Glouster, has Medicaid and type 2 diabetes, and her doctor just retired.
 >
 > When her refills run out, she asks a Facebook group and calls the names in her plan's directory. Two aren't taking patients, and the third is 50 minutes away. Video visits drop on her home connection. **That's the breakdown.** So she waits, her A1c climbs, and she ends up at urgent care or the ER.
 >
@@ -36,11 +36,11 @@ About 5 minutes of slides and 3 minutes of live demo, with a hard cap of **8:00*
 
 ## 2:15 – 3:15 · Slide 4: Our Solution
 
-> "CareBridge changes step three. Linda filters for 'accepting new patients' and 'Medicaid.' Every listing shows when it was **last confirmed**, who verified it, and what her neighbors say. She books. Because she has no internet at home, CareBridge offers her a **private telehealth room at the Glouster library**, with staff there to help her connect.
+> "CareBridge changes step three. Cindy filters for 'accepting new patients' and 'Medicaid.' Every listing shows when it was **last confirmed**, who verified it, and what her neighbors say. She books. Because she has no internet at home, CareBridge offers her a **private telehealth room at the Glouster library**, with staff there to help her connect.
 >
 > On the provider side, her new clinic needs to give her a diabetic eye screening. It has the nurse and the exam room but no retinal camera. CareBridge matches it with a partner that has one: one trip covers several patients.
 >
-> A public operator, like a county health department, runs it. Providers confirm their listing with one tap each week, and libraries host the rooms. It asks almost nothing of Linda: any phone or a library computer, with no app, no cost, and no account needed to search. When something fails, stale listings get flagged, a cancelled partner gets re-matched, and anyone unsure can call a community health worker. **People make every clinical decision; the tool only suggests options.**"
+> A public operator, like a county health department, runs it. Providers confirm their listing with one tap each week, and libraries host the rooms. It asks almost nothing of Cindy: any phone or a library computer, with no app, no cost, and no account needed to search. When something fails, stale listings get flagged, a cancelled partner gets re-matched, and anyone unsure can call a community health worker. **People make every clinical decision; the tool only suggests options.**"
 
 ## 3:15 – 6:15 · Slide 5: Prototype (live demo, 3:00)
 
@@ -48,12 +48,12 @@ Driver follows MASTER_PLAN.md Section 7. Presenter narrates **why**, not what's 
 
 | Time | Beat | Say |
 |---|---|---|
-| 3:15 | **a. Find care**: Landing → Patient → Primary care + Accepting + Medicaid | "Instead of a Facebook group, Linda filters for who's actually taking patients and takes her insurance. These are real places around Athens." |
-| 3:35 | Open Linda's clinic, then the stale listing | "*Confirmed 2 days ago*, verified by the county, and reviewed by neighbors. This one says *may be out of date*. That's the Facebook-group problem, flagged." |
+| 3:15 | **a. Find care**: Landing → Patient → Primary care + Accepting + Medicaid | "Instead of a Facebook group, Cindy filters for who's actually taking patients and takes her insurance. These are real places around Athens." |
+| 3:35 | Open Cindy's clinic, then the stale listing | "*Confirmed 2 days ago*, verified by the county, and reviewed by neighbors. This one says *may be out of date*. That's the Facebook-group problem, flagged." |
 | 3:55 | **b. Book**: connect patient portal (simulated) → Book | "She connects her existing patient portal so she doesn't retype her history. That part is simulated." |
-| 4:10 | Flip **📶 No home internet** | "But Linda has no internet at home…" |
+| 4:10 | Flip **📶 No home internet** | "But Cindy has no internet at home…" |
 | 4:15 | Library banner → Book → text-message preview | "…so CareBridge offers a private telehealth room at the Glouster library, with someone to help, and confirms by plain text message." |
-| 4:40 | **c. Provider**: switch to Hopewell The Plains → New requirement | "Now the clinic's side. Linda needs a diabetic eye screening. They have the nurse and the room, but no retinal camera, so they post exactly what they're missing." |
+| 4:40 | **c. Provider**: switch to Hopewell The Plains → New requirement | "Now the clinic's side. Cindy needs a diabetic eye screening. They have the nurse and the room, but no retinal camera, so they post exactly what they're missing." |
 | 5:10 | Match → OhioHealth O'Bleness → Propose → Accepted | "The hub finds a partner with a portable camera and a technician. One trip covers a screening day for several patients." |
 | 5:30 | **d. Flip ❄️ Partner cancelled** → Re-match → Hocking Valley | "Then it snows and the van can't make it. CareBridge re-matches to the next partner, and nobody is stranded." |
 | 5:55 | **e. (optional)** `/kiosk` | "And this is the library computer: big buttons, a staff-help button, and nothing saved after she leaves." |

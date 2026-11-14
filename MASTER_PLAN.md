@@ -342,8 +342,8 @@ Every workstream and the demo script refer to the demo's key records **through t
 
 ```ts
 export const DEMO_CAST = {
-  patientId: 'p-linda',               // fictional persona in patients.json
-  clinicProviderId: 'hopewell-the-plains',              // Linda's clinic: staff + exam room, NO retinal camera
+  patientId: 'p-cindy',               // fictional persona in patients.json
+  clinicProviderId: 'hopewell-the-plains',              // Cindy's clinic: staff + exam room, NO retinal camera
   cameraPartnerId: 'ohiohealth-obleness',               // "Portable retinal camera" + technician
   backupPartnerId: 'hocking-valley-community-hospital', // second camera, farther (used on re-match)
   accessPointId: 'acpl-glouster',                       // Glouster library: private room + helper
@@ -357,12 +357,12 @@ The pooling story is the user's original example: **one provider has the people 
 
 | Record | Who | Resources (exact labels) |
 |---|---|---|
-| `clinicProviderId` | Linda's clinic: `hopewell-the-plains` (a real FQHC site about 15 min from Glouster), `acceptingNewPatients: true`, takes Medicaid | personnel `Registered nurse`, personnel `Medical assistant`, location `Exam room`. **No** retinal camera, **no** technician |
+| `clinicProviderId` | Cindy's clinic: `hopewell-the-plains` (a real FQHC site about 15 min from Glouster), `acceptingNewPatients: true`, takes Medicaid | personnel `Registered nurse`, personnel `Medical assistant`, location `Exam room`. **No** retinal camera, **no** technician |
 | `cameraPartnerId` | `ohiohealth-obleness` (Athens hospital) | equipment `Portable retinal camera`, personnel `Retinal imaging technician`, equipment `Mobile clinic van` |
 | `backupPartnerId` | `hocking-valley-community-hospital` (Logan; farther, used on ❄️ re-match) | equipment `Portable retinal camera`, personnel `Retinal imaging technician` |
 | `staleProviderId` | `genesis-primary-care-mcconnelsville` | `lastConfirmedDaysAgo: 45` |
 | `accessPointId` | `acpl-glouster` (Glouster Public Library) | `hasPrivateRoom: true`, `hasHelper: true` |
-| `patientId` = `p-linda` | Fictional: 52, Glouster, Medicaid, type 2 diabetes, no primary care provider | `hasHomeInternet: true` (the 📶 switch takes it away live), `portalConnected: false`, `needs: ['primary_care','diabetes_care']`, Glouster town-centre coords |
+| `patientId` = `p-cindy` | Fictional: 52, Glouster, Medicaid, type 2 diabetes, no primary care provider | `hasHomeInternet: true` (the 📶 switch takes it away live), `portalConnected: false`, `needs: ['primary_care','diabetes_care']`, Glouster town-centre coords |
 
 **Demo requirement `req-demo`** (WS4 seeds it): created by the clinic for `Patient #A-104`, service `eye_care`, note "Annual diabetic eye exam: no retinal camera in-house", needs **equipment `Portable retinal camera` + personnel `Retinal imaging technician`**, near Glouster. Best match = the camera partner covering both needs, with the screening held in the clinic's own exam room. With ❄️ on, re-match returns the backup partner.
 
@@ -524,7 +524,7 @@ The bodies of other workstreams' pages, components and lib files once their owne
 7. **Placeholder seed JSON** that is type-valid, so nobody is blocked:
    - `providers.json`: 3 providers in Athens, Nelsonville and Pomeroy. Mix `acceptingNewPatients`. Give each 1–2 `resources` using the shared vocabulary (WS2, step 3), e.g. one has `"Portable retinal camera"` and another has `"Registered nurse"`.
    - `accessPoints.json`: 2 libraries (Athens, Glouster).
-   - `patients.json`: 1 persona, `{ id: "p-linda", displayName: "Linda (fictional)", age: 52, town: "Glouster", location: {lat:39.5034,lng:-82.0846}, insurance: "medicaid", hasHomeInternet: true, portalConnected: false, needs: ["primary_care","diabetes_care"] }`. WS3 owns the final version.
+   - `patients.json`: 1 persona, `{ id: "p-cindy", displayName: "Cindy (fictional)", age: 52, town: "Glouster", location: {lat:39.5034,lng:-82.0846}, insurance: "medicaid", hasHomeInternet: true, portalConnected: false, needs: ["primary_care","diabetes_care"] }`. WS3 owns the final version.
    - `requirements.json`: `{ "requirements": [], "matches": [] }` (WS4 fills it).
    - `src/components/telehealth/CareModeBanner.tsx` stub (owned by WS5): `export default function CareModeBanner({ suggestion, onChoose }: { suggestion: CareModeSuggestion; onChoose: (m: CareMode) => void })` rendering `suggestion.reason` and one button per mode, so WS3's import builds before WS5 merges.
 
@@ -564,7 +564,7 @@ The bodies of other workstreams' pages, components and lib files once their owne
     - `SimulatedFooter` at the bottom of every page, and `DemoPanel` mounted once.
 
 12. **`RoleSwitcher.tsx`**:
-    - Shows the current role as a pill ("Patient · Linda" / "Provider · <org short name>") with a "Switch" button that sets `role=null` and goes to `/`.
+    - Shows the current role as a pill ("Patient · Cindy" / "Provider · <org short name>") with a "Switch" button that sets `role=null` and goes to `/`.
     - Hidden on `/` and `/kiosk`.
 
 13. **`SimulatedFooter.tsx`**: small grey text showing `SIMULATED_NOTE` and "Built at Hackpalachia 2026".
@@ -801,7 +801,7 @@ Make finding care feel like online shopping: search, filter, compare trusted lis
    - `FreshnessBadge`: green when fresh, amber when aging, red when stale, with a clock icon.
 
 2. **`patients.json`** (fictional only; coordinates are town centres):
-   - `p-linda`: Linda, 52, Glouster, `medicaid`, `hasHomeInternet: true`, `portalConnected: false`, `needs: ["primary_care","diabetes_care","eye_care"]`. Type 2 diabetes, no primary care provider. This is the demo persona.
+   - `p-cindy`: Cindy, 52, Glouster, `medicaid`, `hasHomeInternet: true`, `portalConnected: false`, `needs: ["primary_care","diabetes_care","eye_care"]`. Type 2 diabetes, no primary care provider. This is the demo persona.
    - Two extras for realism:
      - `p-ray`: 61, Pomeroy, medicare, no home internet
      - `p-dana`: 47, McArthur, private
@@ -809,7 +809,7 @@ Make finding care feel like online shopping: search, filter, compare trusted lis
    - "No internet at home" = `!patient.hasHomeInternet || flags.noHomeInternet`. Compute it wherever you need it; never mutate the JSON.
 
 3. **Search page (`/patient`).**
-   - **Header:** a greeting ("Hi Linda · Glouster"), a "Connect MyChart" link to `/patient/connect` (hidden if already connected), and a "Telehealth near you" link to `/patient/telehealth`.
+   - **Header:** a greeting ("Hi Cindy · Glouster"), a "Connect MyChart" link to `/patient/connect` (hidden if already connected), and a "Telehealth near you" link to `/patient/telehealth`.
    - **`SearchBar`:** free text matched case-insensitively against name, town and services.
    - **`ServiceChips`:** horizontally scrollable chips, one per `ServiceType`, with human labels such as "Primary care" and "Diabetes care". Multi-select; empty means all.
    - **`Filters`:** on mobile they open in a bottom sheet; on desktop they're an inline row.
@@ -872,7 +872,7 @@ Make finding care feel like online shopping: search, filter, compare trusted lis
      - **Access point:** "Bring a photo ID. A helper will set up the call."
      - **Home telehealth:** "You'll get a link by text 15 min before."
    - **`SmsPreview`:** a phone-style bubble:
-     > "[APP_NAME]: Linda, your visit with {provider} is {day} {time} at {place}. Reply C to confirm, R to reschedule."
+     > "[APP_NAME]: Cindy, your visit with {provider} is {day} {time} at {place}. Reply C to confirm, R to reschedule."
 
      Caption: "Text reminders work on any phone, no internet needed."
    - **"Add to calendar":** a mock that shows a toast.
@@ -895,7 +895,7 @@ Make finding care feel like online shopping: search, filter, compare trusted lis
 - [ ] 🤔 distrust shows the TrustPanel, and the community-health-worker callback modal confirms
 - [ ] The Book page re-renders the CareModeBanner live when 📶 is toggled, and access-point slots come from the access point
 - [ ] Booking produces a Confirmation page with the SMS preview
-- [ ] `patients.json` contains Linda plus 2 extras; no real patient data anywhere
+- [ ] `patients.json` contains Cindy plus 2 extras; no real patient data anywhere
 - [ ] `npm run build` passes; checked at 375px and 1280px
 
 **Paste this into your Claude**
@@ -1167,7 +1167,7 @@ Make sure "no internet at home" or "can't get there" never ends someone's care. 
 
 **Done when**
 - [ ] `suggestCareMode` returns:
-  - `telehealth_access_point` for Linda + primary care + `noHomeInternet` on
+  - `telehealth_access_point` for Cindy + primary care + `noHomeInternet` on
   - `telehealth_home` when she has internet + `providerCancelled` on
   - `in_person` for `eye_care` regardless of flags
 - [ ] `CareModeBanner` renders all three modes and calls `onChoose` with the correct mode and access point id
@@ -1278,10 +1278,10 @@ about what is built vs simulated vs mocked. Don't touch anything in src/.
 
 ## 7. Demo script (≈3 minutes of the 8)
 
-> **Persona (fictional composite):** **Linda, 52, Glouster (Athens County).** Has Medicaid and type 2 diabetes. Her primary care provider retired and she hasn't found a new one. She has a phone, but her home internet is unreliable. In the demo the 📶 switch shows it going out.
+> **Persona (fictional composite):** **Cindy, 52, Glouster (Athens County).** Has Medicaid and type 2 diabetes. Her primary care provider retired and she hasn't found a new one. She has a phone, but her home internet is unreliable. In the demo the 📶 switch shows it going out.
 >
 > **Demo cast** (`DEMO_CAST` in Section 4):
-> - **Linda's clinic:** Hopewell Health Centers, The Plains (`hopewell-the-plains`). Accepting new patients; has a nurse, a medical assistant and an exam room, but no retinal camera.
+> - **Cindy's clinic:** Hopewell Health Centers, The Plains (`hopewell-the-plains`). Accepting new patients; has a nurse, a medical assistant and an exam room, but no retinal camera.
 > - **Camera partner:** OhioHealth O'Bleness Hospital, Athens (`ohiohealth-obleness`). Has a portable retinal camera and a retinal imaging technician.
 > - **Backup partner:** Hocking Valley Community Hospital, Logan (`hocking-valley-community-hospital`). Used after the ❄️ toggle.
 > - **Access point:** Glouster Public Library (`acpl-glouster`). Private room, and staff can help.
@@ -1291,7 +1291,7 @@ about what is built vs simulated vs mocked. Don't touch anything in src/.
 - [ ] Open the live URL. **DemoPanel → "Reset demo".** Confirm all four flags are **off**.
 - [ ] Browser zoom at **125%**. Hide bookmarks bar. Close notifications.
 - [ ] **Tab 1:** `/#/` (Landing). **Tab 2:** `/#/kiosk` (for beat e).
-- [ ] Linda is the default patient. Linda's clinic is selected in the provider dropdown.
+- [ ] Cindy is the default patient. Cindy's clinic is selected in the provider dropdown.
 - [ ] Backup screenshots of every beat are on the **Prototype slide** in the deck. One teammate holds the clicker for slides; the driver only drives the demo.
 - [ ] Do one full dry run, then **Reset demo** again.
 
@@ -1299,22 +1299,22 @@ about what is built vs simulated vs mocked. Don't touch anything in src/.
 
 | Time | Beat | Click | Say (roughly) |
 |---|---|---|---|
-| 0:00 | **a. Find care** | Landing → **Continue as Patient** | "This is Linda, a composite of people we heard about: 52, in Glouster, diabetic, and her doctor just retired. Today she'd ask a Facebook group." |
+| 0:00 | **a. Find care** | Landing → **Continue as Patient** | "This is Cindy, a composite of people we heard about: 52, in Glouster, diabetic, and her doctor just retired. Today she'd ask a Facebook group." |
 | 0:10 | | Search: **Primary care**; filters **Accepting new patients** + **Medicaid** | "Instead, she filters for who's actually taking new patients and takes her insurance." |
-| 0:20 | | Point at the **map** (real Athens-area pins) → open **Linda's clinic** card | "These are real places around Athens. Every listing says when it was last confirmed: this one, **2 days ago**. It's **verified by** the county health department, and **neighbors from her area** reviewed it." *(verification and reviews simulated)* |
+| 0:20 | | Point at the **map** (real Athens-area pins) → open **Cindy's clinic** card | "These are real places around Athens. Every listing says when it was last confirmed: this one, **2 days ago**. It's **verified by** the county health department, and **neighbors from her area** reviewed it." *(verification and reviews simulated)* |
 | 0:32 | | Scroll to the **stale** listing ("May be out of date · confirmed 45 days ago") | "That's the Facebook-group problem: old information. We flag it." |
 | 0:40 | **b. Book with no internet** | Listing → **Connect your patient portal** → choose system → **Allow** → back | "She connects her existing patient portal (simulated) so she doesn't re-type her history." |
 | 0:52 | | **Book**: form shows "Prefilled from your patient portal" | |
-| 0:58 | | **DemoPanel → 📶 No home internet: ON** | "But Linda has no internet at home." |
+| 0:58 | | **DemoPanel → 📶 No home internet: ON** | "But Cindy has no internet at home." |
 | 1:03 | | **CareModeBanner** appears: *"No internet at home? … Glouster Public Library, private room, staff can help you connect, ~6 min. Thu 10:00 AM"* → **Book this** | "We automatically offer a private telehealth room at her local library, with someone there to help." |
 | 1:15 | | Confirmation → **text message preview** | "She gets a plain text reminder. No app needed." |
-| 1:25 | **c. Providers pool resources** | Switch role → **Provider** (Linda's clinic) → Dashboard | "Now the clinic's side. Linda needs a diabetic eye screening. They have the nurse and the room, but no retinal camera." |
+| 1:25 | **c. Providers pool resources** | Switch role → **Provider** (Cindy's clinic) → Dashboard | "Now the clinic's side. Cindy needs a diabetic eye screening. They have the nurse and the room, but no retinal camera." |
 | 1:40 | | **New requirement**: Patient #A-104 · eye care · needs *equipment: Portable retinal camera* + *personnel: Retinal imaging technician* · near Glouster · next 2 weeks → **Find partners** | "They post exactly what they're missing." |
 | 1:55 | | Matches: **Camera partner**, score, "~25 min drive", covers the camera → **Propose** → **Accepted** | "The hub finds a partner with a portable camera. One trip: the camera comes to the clinic for a screening day covering several patients, instead of sending each one to Athens." |
 | 2:15 | | Requirement status: **Scheduled · screening day at Hopewell The Plains** | |
 | 2:20 | **d. Something goes wrong** | **DemoPanel → ❄️ Partner cancelled: ON** | "Then it snows and the partner's van can't make it." |
-| 2:27 | | Requirement shows the cancellation → **Re-match** → **Backup partner** proposed → accepted (or screening rescheduled, with Linda's check-in switched to video) | "The hub re-matches to the next partner automatically, and nobody is stranded." |
-| 2:45 | **e. The library PC** *(optional)* | Tab 2: `/kiosk` → **Start my telehealth visit** | "And this is what Linda sees on the library computer: huge buttons, a staff-help button, and nothing saved after she leaves." |
+| 2:27 | | Requirement shows the cancellation → **Re-match** → **Backup partner** proposed → accepted (or screening rescheduled, with Cindy's check-in switched to video) | "The hub re-matches to the next partner automatically, and nobody is stranded." |
+| 2:45 | **e. The library PC** *(optional)* | Tab 2: `/kiosk` → **Start my telehealth visit** | "And this is what Cindy sees on the library computer: huge buttons, a staff-help button, and nothing saved after she leaves." |
 | 3:00 | | Back to slides | |
 
 **If the live demo breaks:** say *"Let me show you the same flow from our screenshots,"* switch to the Prototype slide, and narrate the same beats. Never debug live.
@@ -1389,8 +1389,8 @@ The **Reset demo** button (WS1) turns all flags off and reseeds the store from J
 - **Speaker note:** Name one barrier for one group in one place. Say the math out loud: judges score Impact partly on scale.
 
 ### Slide 3: Today's Journey · *Evidence* · ⏱ 0:45
-- **Headline:** Linda's search for a doctor stalls at "they're not taking patients."
-- **Persona (fictional composite):** Linda, 52, Glouster (Athens County). Medicaid. Type 2 diabetes. Her primary care provider retired and she has no new one. Spotty internet at home.
+- **Headline:** Cindy's search for a doctor stalls at "they're not taking patients."
+- **Persona (fictional composite):** Cindy, 52, Glouster (Athens County). Medicaid. Type 2 diabetes. Her primary care provider retired and she has no new one. Spotty internet at home.
 - **Who else matters:** the local clinic's front desk, a nearby FQHC, the county health department, the Glouster library, her adult daughter, her Medicaid plan.
 - **Journey:**
   1. **START:** She runs out of her diabetes medication refills and needs a new primary care provider.
@@ -1403,16 +1403,16 @@ The **Reset demo** button (WS1) turns all flags off and reseeds the store from J
 ### Slide 4: Our Solution · *Impact · Feasibility* · ⏱ 1:00
 - **Headline:** One trusted place to see who's actually taking patients nearby, and a way to be seen even without internet.
 - **Today, at the breakdown:** stale lists, dead ends, and video visits that fail at home.
-- **With [ProductName]:** Linda searches "primary care · Medicaid · accepting." Every listing shows **"Confirmed 2 days ago"** along with neighbor reviews and who verified it. She books. Because she has no home internet, the site **suggests a telehealth room at the Glouster library** with a staff helper.
-- **Provider side:** Linda's new clinic needs a diabetic eye screening for her. It has staff but no retinal camera. [ProductName] matches it with a partner that has one, and they hold one pooled clinic day near Glouster.
+- **With [ProductName]:** Cindy searches "primary care · Medicaid · accepting." Every listing shows **"Confirmed 2 days ago"** along with neighbor reviews and who verified it. She books. Because she has no home internet, the site **suggests a telehealth room at the Glouster library** with a staff helper.
+- **Provider side:** Cindy's new clinic needs a diabetic eye screening for her. It has staff but no retinal camera. [ProductName] matches it with a partner that has one, and they hold one pooled clinic day near Glouster.
 - **Who delivers it:** A regional public entity (for example, a county health department or a state rural-health program) runs the hub. Providers keep their own listings current with a one-tap weekly confirmation. Libraries and churches host the telehealth rooms.
 - **What it asks of the person:** any phone or a library computer; no app to install; free; works for searching without an account.
 - **When it can't handle a case:** A listing that hasn't been confirmed in 30+ days is flagged "may be out of date." If a partner cancels, the visit is re-matched or switched to telehealth. A patient who isn't sure can **call a community health worker** instead.
 - **Speaker note:** The tool only suggests options; people make every clinical decision. Stress the trust signals: a neighbor's word, made visible.
 
 ### Slide 5: Prototype · *Prototype* · ⏱ 3:00 (live demo)
-- **Headline:** Linda finds care, even when the internet and the van both fail.
-- **Scenario:** Linda (fictional) searches for a primary care provider, books, and loses internet. Then her clinic arranges an eye screening with a partner, and the partner's van cancels.
+- **Headline:** Cindy finds care, even when the internet and the van both fail.
+- **Scenario:** Cindy (fictional) searches for a primary care provider, books, and loses internet. Then her clinic arranges an eye screening with a partner, and the partner's van cancels.
 - **Watch for:** the **"last confirmed"** label and the **automatic switch to a library telehealth room** when the "📶 No home internet" switch is flipped.
 - **When things go wrong (shown live):**
   - 📶 no home internet → library telehealth room
@@ -1543,7 +1543,7 @@ At scale (all 7 counties): 60,118 adults aged 45–64; 13,431 households offline
 - [ ] Demo script (Section 7) run end to end **twice** on the deployed URL, not just localhost
 - [ ] "Reset demo" puts everything back to the starting state
 - [ ] Simulated-data footer is visible on every page
-- [ ] No real patient information anywhere; Linda and all reviews are fictional
+- [ ] No real patient information anywhere; Cindy and all reviews are fictional
 
 **Deck** (built from `Hackpalachia_Pitch_Template_Final.pptx`)
 - [ ] Instructions slide deleted; every `[bracket]` replaced
@@ -1608,7 +1608,7 @@ Research done on Nov 14, 2026. Names and addresses come from official or primary
 | `clinicProviderId` | `hopewell-the-plains` | Hopewell's main FQHC clinic, about 15 min from Glouster. Gets `Registered nurse`, `Medical assistant`, `Exam room` and **no** camera |
 | `cameraPartnerId` | `ohiohealth-obleness` | The Athens hospital. Gets `Portable retinal camera`, `Retinal imaging technician` and `Mobile clinic van` |
 | `backupPartnerId` | `hocking-valley-community-hospital` | Farther away (Logan). Gets `Portable retinal camera` and `Retinal imaging technician` |
-| `accessPointId` | `acpl-glouster` | Glouster Public Library, Linda's town |
+| `accessPointId` | `acpl-glouster` | Glouster Public Library, Cindy's town |
 | `staleProviderId` | `genesis-primary-care-mcconnelsville` | Seeded `lastConfirmedDaysAgo: 45` |
 
 Other realistic extras (canonical labels only): `ou-heritage-community-clinic` gets `Mobile clinic van` + `Nurse practitioner` (the Heritage College runs mobile units across southeast Ohio, per [OU News 2024](https://www.ohio.edu/news/2024/04/heritage-college-osteopathic-medicine-adds-mini-mobile-unit-health-clinic-fleet)). `athens-city-county-health-dept` gets `Registered nurse` + `Vaccine cold storage` + `Community room (pop-up clinic)`. `marietta-memorial-hospital` gets `Portable ultrasound` + `Nurse practitioner`.

@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useStore } from '../lib/store';
 
-/** "Patient · Linda" / "Provider · <org short name>" plus Switch. Hidden on / and /kiosk. */
+/** "Patient · Cindy" / "Provider · <org short name>" plus Switch. Hidden on / and /kiosk. */
 export default function RoleSwitcher() {
   const { pathname } = useLocation();
   const navigate = useNavigate();

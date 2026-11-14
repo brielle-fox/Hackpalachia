@@ -6,8 +6,8 @@ export const REGION_CENTER = { lat: 39.3292, lng: -82.1013 }; // Athens, OH
 export const REGION_ZOOM = 9;
 
 export const DEMO_CAST = {
-  patientId: 'p-linda',               // fictional persona in patients.json
-  clinicProviderId: 'hopewell-the-plains',              // Linda's clinic: staff + exam room, NO retinal camera
+  patientId: 'p-cindy',               // fictional persona in patients.json
+  clinicProviderId: 'hopewell-the-plains',              // Cindy's clinic: staff + exam room, NO retinal camera
   cameraPartnerId: 'ohiohealth-obleness',               // "Portable retinal camera" + technician
   backupPartnerId: 'hocking-valley-community-hospital', // second camera, farther (used on re-match)
   accessPointId: 'acpl-glouster',                       // Glouster library: private room + helper

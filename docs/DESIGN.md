@@ -39,5 +39,5 @@ Type: **Inter**. Display 44/52 bold (−2%), H1 32/40 bold (−1.5%), H2 24/32 s
 - **Landing role cards:** stethoscope icon "I'm looking for care" (with four quick-start service chips that open Search pre-filtered) and hospital icon "I'm a provider" (with the organization dropdown).
 - **Trust strip:** Fresh, not word of mouth (clock) · Locally verified (shield-check) · Care without home internet (video).
 - **Demo Panel:** right-hand drawer on desktop, bottom sheet on phones; scenario rows with icon, label, one-line effect and switch; "N on" badge; Reset demo asks for confirmation first; Shift+D hint.
-- **WS3 greeting:** "Hi, Linda!"
+- **WS3 greeting:** "Hi, Cindy!"
 - **Placeholder pages:** dashed card with workstream, page name and route.

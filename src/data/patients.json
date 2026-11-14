@@ -1,7 +1,7 @@
 [
   {
-    "id": "p-linda",
-    "displayName": "Linda (fictional)",
+    "id": "p-cindy",
+    "displayName": "Cindy (fictional)",
     "age": 52,
     "town": "Glouster",
     "location": { "lat": 39.50313, "lng": -82.08459 },
