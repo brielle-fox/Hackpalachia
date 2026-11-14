@@ -442,14 +442,14 @@ interface AppState {
 
 Six workstreams, each on its own branch. WS1 goes first and unblocks everyone. WS6 (pitch) doesn't write code and can start right away.
 
-| WS | Name | Branch | People |
-|---|---|---|---|
-| 1 | Foundation & integration | `ws1-foundation` | 1 |
-| 2 | Real data & map | `ws2-data-map` | 1 |
-| 3 | Patient search, listings, trust & booking | `ws3-patient` | 1–2 |
-| 4 | Provider requirements & matching | `ws4-provider` | 1–2 |
-| 5 | Telehealth, shared-computer mode & portal mock | `ws5-telehealth` | 1 |
-| 6 | Pitch deck & evidence | `ws6-pitch` | 1–2 |
+| WS | Name | Branch | People | Owner |
+|---|---|---|---|---|
+| 1 | Foundation & integration | `ws1-foundation` | 1 | **Brielle** (in progress) |
+| 2 | Real data & map | `ws2-data-map` | 1 | **Brielle** (in progress) |
+| 3 | Patient search, listings, trust & booking | `ws3-patient` | 1–2 | **Brielle** (in progress) |
+| 4 | Provider requirements & matching | `ws4-provider` | 1–2 | _open_ |
+| 5 | Telehealth, shared-computer mode & portal mock | `ws5-telehealth` | 1 | _open_ |
+| 6 | Pitch deck & evidence | `ws6-pitch` | 1–2 | _open_ |
 
 > **Smaller team?** Combine **WS1 + WS2** (one person: scaffold, then data and map), and fold **WS5 into WS3**. That leaves 4 people (or 3 if one person does WS6 alongside a code workstream).
 
