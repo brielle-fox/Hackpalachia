@@ -6,26 +6,226 @@
     "address": "55 Hospital Dr, Athens, OH 45701",
     "town": "Athens",
     "county": "Athens",
-    "location": { "lat": 39.32726, "lng": -82.1143 },
-    "services": ["urgent_care", "primary_care", "womens_health", "specialty", "diabetes_care"],
-    "insurances": ["medicaid", "medicare", "private"],
+    "location": {
+      "lat": 39.32726,
+      "lng": -82.1143
+    },
+    "services": [
+      "urgent_care",
+      "primary_care",
+      "womens_health",
+      "specialty",
+      "diabetes_care"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private"
+    ],
     "acceptingNewPatients": true,
     "lastConfirmedDaysAgo": 6,
     "offersTelehealth": true,
     "trust": {
-      "verifiedBy": ["Athens City-County Health Dept"],
+      "verifiedBy": [
+        "Athens City-County Health Dept"
+      ],
       "rating": 4.2,
       "reviewCount": 40,
       "reviews": [
-        { "id": "obleness-rv1", "author": "Neighbor from Athens", "rating": 4, "text": "Short wait and the staff explained everything.", "daysAgo": 5 }
+        {
+          "id": "ohiohealth-obleness-rv1",
+          "author": "Neighbor from Athens",
+          "rating": 5,
+          "text": "Took me as a new patient within two weeks. The nurse called back the same day.",
+          "daysAgo": 3
+        }
       ]
     },
     "resources": [
-      { "id": "ohiohealth-obleness-r1", "providerId": "ohiohealth-obleness", "kind": "equipment", "label": "Portable retinal camera", "availableDays": ["Tue", "Thu"] },
-      { "id": "ohiohealth-obleness-r2", "providerId": "ohiohealth-obleness", "kind": "personnel", "label": "Retinal imaging technician", "availableDays": ["Tue", "Thu"] },
-      { "id": "ohiohealth-obleness-r3", "providerId": "ohiohealth-obleness", "kind": "equipment", "label": "Mobile clinic van" }
+      {
+        "id": "ohiohealth-obleness-r1",
+        "providerId": "ohiohealth-obleness",
+        "kind": "equipment",
+        "label": "Portable retinal camera",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      },
+      {
+        "id": "ohiohealth-obleness-r2",
+        "providerId": "ohiohealth-obleness",
+        "kind": "personnel",
+        "label": "Retinal imaging technician",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      },
+      {
+        "id": "ohiohealth-obleness-r3",
+        "providerId": "ohiohealth-obleness",
+        "kind": "equipment",
+        "label": "Mobile clinic van",
+        "availableDays": [
+          "Wed"
+        ]
+      }
     ],
-    "dataSource": "https://www.openstreetmap.org/search?query=55%20Hospital%20Dr%20Athens%20OH"
+    "dataSource": "https://www.openstreetmap.org/search?query=55%20Hospital%20Dr,%20Athens,%20OH%2045701"
+  },
+  {
+    "id": "ohiohealth-nelsonville",
+    "name": "OhioHealth Nelsonville Health Center (Urgent Care + Heritage College Primary Care)",
+    "orgType": "clinic",
+    "address": "11 John Lloyd Evans Memorial Dr, Nelsonville, OH 45764",
+    "town": "Nelsonville",
+    "county": "Athens",
+    "location": {
+      "lat": 39.46541,
+      "lng": -82.24978
+    },
+    "phone": "740-753-7342",
+    "website": "https://www.ohiohealth.com/nelsonville",
+    "services": [
+      "urgent_care",
+      "primary_care",
+      "pediatrics"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private"
+    ],
+    "acceptingNewPatients": false,
+    "lastConfirmedDaysAgo": 3,
+    "offersTelehealth": true,
+    "trust": {
+      "verifiedBy": [
+        "Athens City-County Health Dept"
+      ],
+      "rating": 4.3,
+      "reviewCount": 22,
+      "reviews": [
+        {
+          "id": "ohiohealth-nelsonville-rv1",
+          "author": "Neighbor from Nelsonville",
+          "rating": 4,
+          "text": "Friendly front desk, but expect a wait on Mondays.",
+          "daysAgo": 4
+        },
+        {
+          "id": "ohiohealth-nelsonville-rv2",
+          "author": "Neighbor from Glouster",
+          "rating": 5,
+          "text": "Explained my diabetes numbers in plain language.",
+          "daysAgo": 13
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "ohiohealth-nelsonville-r1",
+        "providerId": "ohiohealth-nelsonville",
+        "kind": "equipment",
+        "label": "Telehealth cart",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      },
+      {
+        "id": "ohiohealth-nelsonville-r2",
+        "providerId": "ohiohealth-nelsonville",
+        "kind": "personnel",
+        "label": "Nurse practitioner",
+        "availableDays": [
+          "Wed"
+        ]
+      }
+    ],
+    "dataSource": "https://www.ohiohealth.com/nelsonville"
+  },
+  {
+    "id": "hopewell-athens",
+    "name": "Hopewell Health Centers – Athens Behavioral Health / Primary Care",
+    "orgType": "fqhc",
+    "address": "90 Hospital Dr, Athens, OH 45701",
+    "town": "Athens",
+    "county": "Athens",
+    "location": {
+      "lat": 39.32893,
+      "lng": -82.11567
+    },
+    "phone": "740-592-3091",
+    "website": "https://www.hopewellhealth.org/locations/",
+    "services": [
+      "primary_care",
+      "behavioral_health"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private",
+      "sliding_scale"
+    ],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 4,
+    "offersTelehealth": true,
+    "trust": {
+      "verifiedBy": [
+        "Athens City-County Health Dept"
+      ],
+      "rating": 4.4,
+      "reviewCount": 26,
+      "reviews": [
+        {
+          "id": "hopewell-athens-rv1",
+          "author": "Neighbor from Athens",
+          "rating": 5,
+          "text": "Short wait and the staff explained everything.",
+          "daysAgo": 5
+        },
+        {
+          "id": "hopewell-athens-rv2",
+          "author": "Neighbor from The Plains",
+          "rating": 4,
+          "text": "Helped me sort out my Medicaid paperwork before the visit.",
+          "daysAgo": 14
+        },
+        {
+          "id": "hopewell-athens-rv3",
+          "author": "Neighbor from Albany",
+          "rating": 5,
+          "text": "Took me as a new patient within two weeks. The nurse called back the same day.",
+          "daysAgo": 32
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "hopewell-athens-r1",
+        "providerId": "hopewell-athens",
+        "kind": "personnel",
+        "label": "Physician assistant",
+        "availableDays": [
+          "Wed"
+        ]
+      },
+      {
+        "id": "hopewell-athens-r2",
+        "providerId": "hopewell-athens",
+        "kind": "personnel",
+        "label": "Behavioral health counselor",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      }
+    ],
+    "dataSource": "https://www.hopewellhealth.org/locations/"
   },
   {
     "id": "hopewell-nelsonville",
@@ -34,26 +234,519 @@
     "address": "1950 Mount St. Marys Dr, Nelsonville, OH 45764",
     "town": "Nelsonville",
     "county": "Athens",
-    "location": { "lat": 39.46327, "lng": -82.24321 },
+    "location": {
+      "lat": 39.46327,
+      "lng": -82.24321
+    },
     "phone": "740-797-2352",
-    "services": ["primary_care", "dental"],
-    "insurances": ["medicaid", "medicare", "private", "sliding_scale"],
+    "website": "https://www.hopewellhealth.org/locations/",
+    "services": [
+      "primary_care",
+      "dental"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private",
+      "sliding_scale"
+    ],
     "acceptingNewPatients": true,
     "lastConfirmedDaysAgo": 1,
     "offersTelehealth": true,
     "trust": {
-      "verifiedBy": ["Athens City-County Health Dept"],
+      "verifiedBy": [
+        "Athens City-County Health Dept"
+      ],
       "rating": 4.5,
       "reviewCount": 18,
       "reviews": [
-        { "id": "hopewell-nelsonville-rv1", "author": "Neighbor from Nelsonville", "rating": 5, "text": "Took me as a new patient within two weeks.", "daysAgo": 3 }
+        {
+          "id": "hopewell-nelsonville-rv1",
+          "author": "Neighbor from Nelsonville",
+          "rating": 4,
+          "text": "Sliding scale made it affordable. Parking is tight.",
+          "daysAgo": 6
+        }
       ]
     },
     "resources": [
-      { "id": "hopewell-nelsonville-r1", "providerId": "hopewell-nelsonville", "kind": "personnel", "label": "Registered nurse" },
-      { "id": "hopewell-nelsonville-r2", "providerId": "hopewell-nelsonville", "kind": "personnel", "label": "Dental hygienist" }
+      {
+        "id": "hopewell-nelsonville-r1",
+        "providerId": "hopewell-nelsonville",
+        "kind": "personnel",
+        "label": "Dental hygienist",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      },
+      {
+        "id": "hopewell-nelsonville-r2",
+        "providerId": "hopewell-nelsonville",
+        "kind": "equipment",
+        "label": "Portable dental unit",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      }
     ],
     "dataSource": "https://www.hopewellhealth.org/locations/"
+  },
+  {
+    "id": "hopewell-coolville",
+    "name": "Hopewell Health Centers – Coolville Primary Care",
+    "orgType": "fqhc",
+    "address": "25716 Wilson St, Coolville, OH 45723",
+    "town": "Coolville",
+    "county": "Athens",
+    "location": {
+      "lat": 39.21796,
+      "lng": -81.80677
+    },
+    "phone": "740-846-0008",
+    "website": "https://www.hopewellhealth.org/locations/",
+    "services": [
+      "primary_care"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private",
+      "sliding_scale"
+    ],
+    "acceptingNewPatients": false,
+    "lastConfirmedDaysAgo": 18,
+    "offersTelehealth": false,
+    "trust": {
+      "verifiedBy": [],
+      "rating": 4.0,
+      "reviewCount": 7,
+      "reviews": [
+        {
+          "id": "hopewell-coolville-rv1",
+          "author": "Neighbor from Coolville",
+          "rating": 5,
+          "text": "Explained my diabetes numbers in plain language.",
+          "daysAgo": 7
+        },
+        {
+          "id": "hopewell-coolville-rv2",
+          "author": "Neighbor from Tuppers Plains",
+          "rating": 3,
+          "text": "Good care once you are seen. Getting through on the phone took a few tries.",
+          "daysAgo": 16
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "hopewell-coolville-r1",
+        "providerId": "hopewell-coolville",
+        "kind": "personnel",
+        "label": "Community health worker",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      }
+    ],
+    "dataSource": "https://www.hopewellhealth.org/locations/"
+  },
+  {
+    "id": "hopewell-the-plains",
+    "name": "Hopewell Health Centers – Main Clinic (Appalachian Family Life Center)",
+    "orgType": "fqhc",
+    "address": "25 S Clinton St, The Plains, OH 45780",
+    "town": "The Plains",
+    "county": "Athens",
+    "location": {
+      "lat": 39.37009,
+      "lng": -82.13237
+    },
+    "phone": "740-249-4318",
+    "website": "https://www.hopewellhealth.org/locations/",
+    "services": [
+      "primary_care",
+      "womens_health",
+      "pediatrics"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private",
+      "sliding_scale"
+    ],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 2,
+    "offersTelehealth": true,
+    "trust": {
+      "verifiedBy": [
+        "Athens City-County Health Dept",
+        "Ohio Rural Health Program"
+      ],
+      "rating": 4.7,
+      "reviewCount": 31,
+      "reviews": [
+        {
+          "id": "hopewell-the-plains-rv1",
+          "author": "Neighbor from Glouster",
+          "rating": 4,
+          "text": "Helped me sort out my Medicaid paperwork before the visit.",
+          "daysAgo": 3
+        },
+        {
+          "id": "hopewell-the-plains-rv2",
+          "author": "Neighbor from The Plains",
+          "rating": 5,
+          "text": "Took me as a new patient within two weeks. The nurse called back the same day.",
+          "daysAgo": 12
+        },
+        {
+          "id": "hopewell-the-plains-rv3",
+          "author": "Neighbor from Chauncey",
+          "rating": 4,
+          "text": "Sliding scale made it affordable. Parking is tight.",
+          "daysAgo": 30
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "hopewell-the-plains-r1",
+        "providerId": "hopewell-the-plains",
+        "kind": "personnel",
+        "label": "Registered nurse",
+        "availableDays": [
+          "Wed"
+        ]
+      },
+      {
+        "id": "hopewell-the-plains-r2",
+        "providerId": "hopewell-the-plains",
+        "kind": "personnel",
+        "label": "Medical assistant",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      },
+      {
+        "id": "hopewell-the-plains-r3",
+        "providerId": "hopewell-the-plains",
+        "kind": "location",
+        "label": "Exam room",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      }
+    ],
+    "dataSource": "https://www.hopewellhealth.org/locations/"
+  },
+  {
+    "id": "hopewell-lancer",
+    "name": "Hopewell Health Centers – Lancer Care Clinic",
+    "orgType": "fqhc",
+    "address": "8461 State Route 144, Stewart, OH 45778",
+    "town": "Stewart",
+    "county": "Athens",
+    "location": {
+      "lat": 39.30813,
+      "lng": -81.89458
+    },
+    "phone": "740-662-0541",
+    "website": "https://www.hopewellhealth.org/locations/",
+    "services": [
+      "primary_care",
+      "pediatrics"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private",
+      "sliding_scale"
+    ],
+    "acceptingNewPatients": false,
+    "lastConfirmedDaysAgo": 9,
+    "offersTelehealth": false,
+    "trust": {
+      "verifiedBy": [],
+      "rating": 4.3,
+      "reviewCount": 11,
+      "reviews": [
+        {
+          "id": "hopewell-lancer-rv1",
+          "author": "Neighbor from Stewart",
+          "rating": 5,
+          "text": "They set me up with a video visit when my car broke down.",
+          "daysAgo": 4
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "hopewell-lancer-r1",
+        "providerId": "hopewell-lancer",
+        "kind": "personnel",
+        "label": "Registered nurse",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      },
+      {
+        "id": "hopewell-lancer-r2",
+        "providerId": "hopewell-lancer",
+        "kind": "location",
+        "label": "Parking for mobile unit",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      }
+    ],
+    "dataSource": "https://www.hopewellhealth.org/locations/"
+  },
+  {
+    "id": "athens-city-county-health-dept",
+    "name": "Athens City-County Health Department",
+    "orgType": "health_department",
+    "address": "278 W Union St, Athens, OH 45701",
+    "town": "Athens",
+    "county": "Athens",
+    "location": {
+      "lat": 39.32986,
+      "lng": -82.11385
+    },
+    "phone": "740-592-4431",
+    "services": [
+      "womens_health",
+      "pediatrics",
+      "specialty"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private"
+    ],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 0,
+    "offersTelehealth": false,
+    "trust": {
+      "verifiedBy": [
+        "Ohio Rural Health Program"
+      ],
+      "rating": 4.6,
+      "reviewCount": 15,
+      "reviews": [
+        {
+          "id": "athens-city-county-health-dept-rv1",
+          "author": "Neighbor from Athens",
+          "rating": 3,
+          "text": "Good care once you are seen. Getting through on the phone took a few tries.",
+          "daysAgo": 5
+        },
+        {
+          "id": "athens-city-county-health-dept-rv2",
+          "author": "Neighbor from The Plains",
+          "rating": 5,
+          "text": "Short wait and the staff explained everything.",
+          "daysAgo": 14
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "athens-city-county-health-dept-r1",
+        "providerId": "athens-city-county-health-dept",
+        "kind": "personnel",
+        "label": "Registered nurse",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      },
+      {
+        "id": "athens-city-county-health-dept-r2",
+        "providerId": "athens-city-county-health-dept",
+        "kind": "equipment",
+        "label": "Vaccine cold storage",
+        "availableDays": [
+          "Wed"
+        ]
+      },
+      {
+        "id": "athens-city-county-health-dept-r3",
+        "providerId": "athens-city-county-health-dept",
+        "kind": "location",
+        "label": "Community room (pop-up clinic)",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      }
+    ],
+    "dataSource": "https://npin.cdc.gov/organization/athens-city-county-health-department"
+  },
+  {
+    "id": "ou-heritage-community-clinic",
+    "name": "Ohio University Heritage Community Clinic (base for the Heritage College mobile clinics)",
+    "orgType": "clinic",
+    "address": "16 W Green Dr (Grosvenor Hall), Athens, OH 45701",
+    "town": "Athens",
+    "county": "Athens",
+    "location": {
+      "lat": 39.32457,
+      "lng": -82.10606
+    },
+    "phone": "740-593-2432",
+    "website": "https://www.ohio.edu/medicine/community-health/community-clinic/appointment",
+    "services": [
+      "primary_care",
+      "diabetes_care",
+      "pediatrics"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private"
+    ],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 0,
+    "offersTelehealth": false,
+    "trust": {
+      "verifiedBy": [
+        "Ohio Rural Health Program"
+      ],
+      "rating": 4.8,
+      "reviewCount": 12,
+      "reviews": [
+        {
+          "id": "ou-heritage-community-clinic-rv1",
+          "author": "Neighbor from Athens",
+          "rating": 5,
+          "text": "Took me as a new patient within two weeks. The nurse called back the same day.",
+          "daysAgo": 6
+        },
+        {
+          "id": "ou-heritage-community-clinic-rv2",
+          "author": "Neighbor from The Plains",
+          "rating": 4,
+          "text": "Sliding scale made it affordable. Parking is tight.",
+          "daysAgo": 15
+        },
+        {
+          "id": "ou-heritage-community-clinic-rv3",
+          "author": "Neighbor from Albany",
+          "rating": 5,
+          "text": "They set me up with a video visit when my car broke down.",
+          "daysAgo": 33
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "ou-heritage-community-clinic-r1",
+        "providerId": "ou-heritage-community-clinic",
+        "kind": "equipment",
+        "label": "Mobile clinic van",
+        "availableDays": [
+          "Wed"
+        ]
+      },
+      {
+        "id": "ou-heritage-community-clinic-r2",
+        "providerId": "ou-heritage-community-clinic",
+        "kind": "personnel",
+        "label": "Nurse practitioner",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      },
+      {
+        "id": "ou-heritage-community-clinic-r3",
+        "providerId": "ou-heritage-community-clinic",
+        "kind": "equipment",
+        "label": "Point-of-care A1C analyzer",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      }
+    ],
+    "dataSource": "https://www.ohio.edu/medicine/community-health/community-clinic/appointment"
+  },
+  {
+    "id": "health-recovery-services",
+    "name": "Health Recovery Services",
+    "orgType": "behavioral_health",
+    "address": "224 Columbus Rd, Athens, OH 45701",
+    "town": "Athens",
+    "county": "Athens",
+    "location": {
+      "lat": 39.35721,
+      "lng": -82.10385
+    },
+    "phone": "740-592-6720",
+    "services": [
+      "behavioral_health"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private"
+    ],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 5,
+    "offersTelehealth": true,
+    "trust": {
+      "verifiedBy": [
+        "Athens City-County Health Dept"
+      ],
+      "rating": 4.4,
+      "reviewCount": 14,
+      "reviews": [
+        {
+          "id": "health-recovery-services-rv1",
+          "author": "Neighbor from Athens",
+          "rating": 4,
+          "text": "Friendly front desk, but expect a wait on Mondays.",
+          "daysAgo": 7
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "health-recovery-services-r1",
+        "providerId": "health-recovery-services",
+        "kind": "personnel",
+        "label": "Behavioral health counselor",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      },
+      {
+        "id": "health-recovery-services-r2",
+        "providerId": "health-recovery-services",
+        "kind": "location",
+        "label": "Private telehealth room",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      }
+    ],
+    "dataSource": "https://ohio.edu/counseling/resources/athens"
   },
   {
     "id": "hopewell-pomeroy",
@@ -62,16 +755,845 @@
     "address": "41865 Pomeroy Pike, Pomeroy, OH 45769",
     "town": "Pomeroy",
     "county": "Meigs",
-    "location": { "lat": 39.05579, "lng": -82.01299 },
+    "location": {
+      "lat": 39.05579,
+      "lng": -82.01299
+    },
     "phone": "740-992-0540",
-    "services": ["primary_care", "dental", "behavioral_health"],
-    "insurances": ["medicaid", "medicare", "private", "sliding_scale"],
+    "website": "https://www.hopewellhealth.org/locations/",
+    "services": [
+      "primary_care",
+      "dental",
+      "behavioral_health"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private",
+      "sliding_scale"
+    ],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 7,
+    "offersTelehealth": true,
+    "trust": {
+      "verifiedBy": [
+        "Meigs County Health Dept"
+      ],
+      "rating": 4.2,
+      "reviewCount": 16,
+      "reviews": [
+        {
+          "id": "hopewell-pomeroy-rv1",
+          "author": "Neighbor from Pomeroy",
+          "rating": 5,
+          "text": "Short wait and the staff explained everything.",
+          "daysAgo": 3
+        },
+        {
+          "id": "hopewell-pomeroy-rv2",
+          "author": "Neighbor from Middleport",
+          "rating": 4,
+          "text": "Helped me sort out my Medicaid paperwork before the visit.",
+          "daysAgo": 12
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "hopewell-pomeroy-r1",
+        "providerId": "hopewell-pomeroy",
+        "kind": "personnel",
+        "label": "Behavioral health counselor",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      },
+      {
+        "id": "hopewell-pomeroy-r2",
+        "providerId": "hopewell-pomeroy",
+        "kind": "personnel",
+        "label": "Dental hygienist",
+        "availableDays": [
+          "Wed"
+        ]
+      }
+    ],
+    "dataSource": "https://www.hopewellhealth.org/locations/"
+  },
+  {
+    "id": "hopewell-racine",
+    "name": "Hopewell Health Centers – Racine Dental",
+    "orgType": "fqhc",
+    "address": "106 Tyree Blvd, Racine, OH 45771",
+    "town": "Racine",
+    "county": "Meigs",
+    "location": {
+      "lat": 38.97124,
+      "lng": -81.91174
+    },
+    "phone": "740-444-5247",
+    "website": "https://www.hopewellhealth.org/locations/",
+    "services": [
+      "dental"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private",
+      "sliding_scale"
+    ],
+    "acceptingNewPatients": false,
+    "lastConfirmedDaysAgo": 33,
+    "offersTelehealth": false,
+    "trust": {
+      "verifiedBy": [],
+      "rating": 4.1,
+      "reviewCount": 6,
+      "reviews": [
+        {
+          "id": "hopewell-racine-rv1",
+          "author": "Neighbor from Racine",
+          "rating": 4,
+          "text": "Sliding scale made it affordable. Parking is tight.",
+          "daysAgo": 4
+        },
+        {
+          "id": "hopewell-racine-rv2",
+          "author": "Neighbor from Syracuse",
+          "rating": 5,
+          "text": "They set me up with a video visit when my car broke down.",
+          "daysAgo": 13
+        },
+        {
+          "id": "hopewell-racine-rv3",
+          "author": "Neighbor from Pomeroy",
+          "rating": 4,
+          "text": "Friendly front desk, but expect a wait on Mondays.",
+          "daysAgo": 31
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "hopewell-racine-r1",
+        "providerId": "hopewell-racine",
+        "kind": "equipment",
+        "label": "Portable dental unit",
+        "availableDays": [
+          "Wed"
+        ]
+      }
+    ],
+    "dataSource": "https://www.hopewellhealth.org/locations/"
+  },
+  {
+    "id": "holzer-meigs",
+    "name": "Holzer Meigs (clinic)",
+    "orgType": "clinic",
+    "address": "88 E Memorial Dr, Pomeroy, OH 45769",
+    "town": "Pomeroy",
+    "county": "Meigs",
+    "location": {
+      "lat": 39.03895,
+      "lng": -82.04554
+    },
+    "phone": "740-992-0060",
+    "website": "https://holzer.org/locations/locations-profile/?id=9",
+    "services": [
+      "primary_care",
+      "womens_health",
+      "pediatrics"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private"
+    ],
+    "acceptingNewPatients": false,
+    "lastConfirmedDaysAgo": 5,
+    "offersTelehealth": true,
+    "trust": {
+      "verifiedBy": [
+        "Meigs County Health Dept"
+      ],
+      "rating": 4.0,
+      "reviewCount": 19,
+      "reviews": [
+        {
+          "id": "holzer-meigs-rv1",
+          "author": "Neighbor from Pomeroy",
+          "rating": 5,
+          "text": "Explained my diabetes numbers in plain language.",
+          "daysAgo": 5
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "holzer-meigs-r1",
+        "providerId": "holzer-meigs",
+        "kind": "personnel",
+        "label": "Nurse practitioner",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      },
+      {
+        "id": "holzer-meigs-r2",
+        "providerId": "holzer-meigs",
+        "kind": "location",
+        "label": "Exam room",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      }
+    ],
+    "dataSource": "https://holzer.org/locations/locations-profile/?id=9"
+  },
+  {
+    "id": "holzer-meigs-ed",
+    "name": "Holzer Meigs Emergency Department (24/7)",
+    "orgType": "hospital",
+    "address": "41861 Pomeroy Pike, Pomeroy, OH 45769",
+    "town": "Pomeroy",
+    "county": "Meigs",
+    "location": {
+      "lat": 39.05579,
+      "lng": -82.01299
+    },
+    "website": "https://holzer.org/locations/locations-profile/?id=10",
+    "services": [
+      "urgent_care"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private"
+    ],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 3,
+    "offersTelehealth": false,
+    "trust": {
+      "verifiedBy": [
+        "Meigs County Health Dept"
+      ],
+      "rating": 3.9,
+      "reviewCount": 27,
+      "reviews": [
+        {
+          "id": "holzer-meigs-ed-rv1",
+          "author": "Neighbor from Pomeroy",
+          "rating": 4,
+          "text": "Helped me sort out my Medicaid paperwork before the visit.",
+          "daysAgo": 6
+        },
+        {
+          "id": "holzer-meigs-ed-rv2",
+          "author": "Neighbor from Middleport",
+          "rating": 5,
+          "text": "Took me as a new patient within two weeks. The nurse called back the same day.",
+          "daysAgo": 15
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "holzer-meigs-ed-r1",
+        "providerId": "holzer-meigs-ed",
+        "kind": "equipment",
+        "label": "Portable ultrasound",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      },
+      {
+        "id": "holzer-meigs-ed-r2",
+        "providerId": "holzer-meigs-ed",
+        "kind": "personnel",
+        "label": "Physician assistant",
+        "availableDays": [
+          "Wed"
+        ]
+      }
+    ],
+    "dataSource": "https://holzer.org/locations/locations-profile/?id=10"
+  },
+  {
+    "id": "fruth-pharmacy-pomeroy",
+    "name": "Fruth Pharmacy – Pomeroy",
+    "orgType": "pharmacy",
+    "address": "706 W Main St, Pomeroy, OH 45769",
+    "town": "Pomeroy",
+    "county": "Meigs",
+    "location": {
+      "lat": 39.01061,
+      "lng": -82.04481
+    },
+    "phone": "740-992-6491",
+    "services": [
+      "pharmacy"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private"
+    ],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 2,
+    "offersTelehealth": false,
+    "trust": {
+      "verifiedBy": [],
+      "rating": 4.5,
+      "reviewCount": 21,
+      "reviews": [
+        {
+          "id": "fruth-pharmacy-pomeroy-rv1",
+          "author": "Neighbor from Pomeroy",
+          "rating": 5,
+          "text": "They set me up with a video visit when my car broke down.",
+          "daysAgo": 7
+        },
+        {
+          "id": "fruth-pharmacy-pomeroy-rv2",
+          "author": "Neighbor from Middleport",
+          "rating": 4,
+          "text": "Friendly front desk, but expect a wait on Mondays.",
+          "daysAgo": 16
+        },
+        {
+          "id": "fruth-pharmacy-pomeroy-rv3",
+          "author": "Neighbor from Racine",
+          "rating": 5,
+          "text": "Explained my diabetes numbers in plain language.",
+          "daysAgo": 34
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "fruth-pharmacy-pomeroy-r1",
+        "providerId": "fruth-pharmacy-pomeroy",
+        "kind": "personnel",
+        "label": "Pharmacist",
+        "availableDays": [
+          "Wed"
+        ]
+      },
+      {
+        "id": "fruth-pharmacy-pomeroy-r2",
+        "providerId": "fruth-pharmacy-pomeroy",
+        "kind": "equipment",
+        "label": "Vaccine cold storage",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      }
+    ],
+    "dataSource": "https://www.rxless.com/pharmacies/ohio/pomeroy/fruth-pharmacy/706-W-Main-St/1346255270"
+  },
+  {
+    "id": "hopewell-mcarthur",
+    "name": "Hopewell Health Centers – McArthur Dental, Primary & Behavioral Health",
+    "orgType": "fqhc",
+    "address": "31891 State Route 93 N, McArthur, OH 45651",
+    "town": "McArthur",
+    "county": "Vinton",
+    "location": {
+      "lat": 39.262,
+      "lng": -82.47738
+    },
+    "phone": "740-596-5249",
+    "website": "https://www.hopewellhealth.org/locations/",
+    "services": [
+      "primary_care",
+      "dental",
+      "behavioral_health"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private",
+      "sliding_scale"
+    ],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 3,
+    "offersTelehealth": true,
+    "trust": {
+      "verifiedBy": [
+        "Vinton County Health Dept"
+      ],
+      "rating": 4.3,
+      "reviewCount": 13,
+      "reviews": [
+        {
+          "id": "hopewell-mcarthur-rv1",
+          "author": "Neighbor from McArthur",
+          "rating": 3,
+          "text": "Good care once you are seen. Getting through on the phone took a few tries.",
+          "daysAgo": 3
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "hopewell-mcarthur-r1",
+        "providerId": "hopewell-mcarthur",
+        "kind": "personnel",
+        "label": "Behavioral health counselor",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      },
+      {
+        "id": "hopewell-mcarthur-r2",
+        "providerId": "hopewell-mcarthur",
+        "kind": "equipment",
+        "label": "Point-of-care A1C analyzer",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      }
+    ],
+    "dataSource": "https://www.hopewellhealth.org/locations/"
+  },
+  {
+    "id": "hocking-valley-community-hospital",
+    "name": "Hocking Valley Community Hospital",
+    "orgType": "hospital",
+    "address": "601 State Route 664 N, Logan, OH 43138",
+    "town": "Logan",
+    "county": "Hocking",
+    "location": {
+      "lat": 39.54812,
+      "lng": -82.42993
+    },
+    "phone": "740-380-8000",
+    "services": [
+      "urgent_care",
+      "primary_care",
+      "specialty"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private"
+    ],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 10,
+    "offersTelehealth": true,
+    "trust": {
+      "verifiedBy": [
+        "Hocking County Health Dept"
+      ],
+      "rating": 4.1,
+      "reviewCount": 33,
+      "reviews": [
+        {
+          "id": "hocking-valley-community-hospital-rv1",
+          "author": "Neighbor from Logan",
+          "rating": 5,
+          "text": "Took me as a new patient within two weeks. The nurse called back the same day.",
+          "daysAgo": 4
+        },
+        {
+          "id": "hocking-valley-community-hospital-rv2",
+          "author": "Neighbor from Nelsonville",
+          "rating": 4,
+          "text": "Sliding scale made it affordable. Parking is tight.",
+          "daysAgo": 13
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "hocking-valley-community-hospital-r1",
+        "providerId": "hocking-valley-community-hospital",
+        "kind": "equipment",
+        "label": "Portable retinal camera",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      },
+      {
+        "id": "hocking-valley-community-hospital-r2",
+        "providerId": "hocking-valley-community-hospital",
+        "kind": "personnel",
+        "label": "Retinal imaging technician",
+        "availableDays": [
+          "Wed"
+        ]
+      },
+      {
+        "id": "hocking-valley-community-hospital-r3",
+        "providerId": "hocking-valley-community-hospital",
+        "kind": "equipment",
+        "label": "Portable ultrasound",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      }
+    ],
+    "dataSource": "https://www.hockinghillschamber.com/member/hocking-valley-community-hospital"
+  },
+  {
+    "id": "hopewell-logan",
+    "name": "Hopewell Health Centers – Logan Primary Care",
+    "orgType": "fqhc",
+    "address": "30381 Chieftain Dr, Logan, OH 43138",
+    "town": "Logan",
+    "county": "Hocking",
+    "location": {
+      "lat": 39.55442,
+      "lng": -82.45509
+    },
+    "phone": "740-385-2555",
+    "website": "https://www.hopewellhealth.org/locations/",
+    "services": [
+      "primary_care"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private",
+      "sliding_scale"
+    ],
     "acceptingNewPatients": false,
     "lastConfirmedDaysAgo": 12,
     "offersTelehealth": false,
-    "trust": { "verifiedBy": [], "rating": 4.1, "reviewCount": 9, "reviews": [] },
+    "trust": {
+      "verifiedBy": [],
+      "rating": 4.2,
+      "reviewCount": 10,
+      "reviews": [
+        {
+          "id": "hopewell-logan-rv1",
+          "author": "Neighbor from Logan",
+          "rating": 4,
+          "text": "Friendly front desk, but expect a wait on Mondays.",
+          "daysAgo": 5
+        },
+        {
+          "id": "hopewell-logan-rv2",
+          "author": "Neighbor from Nelsonville",
+          "rating": 5,
+          "text": "Explained my diabetes numbers in plain language.",
+          "daysAgo": 14
+        },
+        {
+          "id": "hopewell-logan-rv3",
+          "author": "Neighbor from Laurelville",
+          "rating": 3,
+          "text": "Good care once you are seen. Getting through on the phone took a few tries.",
+          "daysAgo": 32
+        }
+      ]
+    },
     "resources": [
-      { "id": "hopewell-pomeroy-r1", "providerId": "hopewell-pomeroy", "kind": "personnel", "label": "Behavioral health counselor" }
+      {
+        "id": "hopewell-logan-r1",
+        "providerId": "hopewell-logan",
+        "kind": "personnel",
+        "label": "Medical assistant",
+        "availableDays": [
+          "Wed"
+        ]
+      },
+      {
+        "id": "hopewell-logan-r2",
+        "providerId": "hopewell-logan",
+        "kind": "personnel",
+        "label": "Community health worker",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      }
+    ],
+    "dataSource": "https://www.hopewellhealth.org/locations/"
+  },
+  {
+    "id": "hopewell-new-lexington",
+    "name": "Hopewell Health Centers – New Lexington Primary Care",
+    "orgType": "fqhc",
+    "address": "2541 Panther Dr, New Lexington, OH 43764",
+    "town": "New Lexington",
+    "county": "Perry",
+    "location": {
+      "lat": 39.72625,
+      "lng": -82.20616
+    },
+    "phone": "740-342-4192",
+    "website": "https://www.hopewellhealth.org/locations/",
+    "services": [
+      "primary_care",
+      "womens_health"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private",
+      "sliding_scale"
+    ],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 8,
+    "offersTelehealth": true,
+    "trust": {
+      "verifiedBy": [
+        "Perry County Health Dept"
+      ],
+      "rating": 4.3,
+      "reviewCount": 9,
+      "reviews": [
+        {
+          "id": "hopewell-new-lexington-rv1",
+          "author": "Neighbor from New Lexington",
+          "rating": 5,
+          "text": "Short wait and the staff explained everything.",
+          "daysAgo": 6
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "hopewell-new-lexington-r1",
+        "providerId": "hopewell-new-lexington",
+        "kind": "personnel",
+        "label": "Registered nurse",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      },
+      {
+        "id": "hopewell-new-lexington-r2",
+        "providerId": "hopewell-new-lexington",
+        "kind": "equipment",
+        "label": "Telehealth cart",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      }
+    ],
+    "dataSource": "https://www.hopewellhealth.org/locations/"
+  },
+  {
+    "id": "genesis-primary-care-mcconnelsville",
+    "name": "Genesis Primary Care – McConnelsville",
+    "orgType": "clinic",
+    "address": "4279 State Route 376, McConnelsville, OH 43756",
+    "town": "McConnelsville",
+    "county": "Morgan",
+    "location": {
+      "lat": 39.64877,
+      "lng": -81.85337
+    },
+    "phone": "740-651-5188",
+    "website": "https://www.genesishcs.org/taxonomy/term/5261",
+    "services": [
+      "primary_care"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private"
+    ],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 45,
+    "offersTelehealth": false,
+    "trust": {
+      "verifiedBy": [],
+      "rating": 4.0,
+      "reviewCount": 5,
+      "reviews": [
+        {
+          "id": "genesis-primary-care-mcconnelsville-rv1",
+          "author": "Neighbor from McConnelsville",
+          "rating": 4,
+          "text": "Sliding scale made it affordable. Parking is tight.",
+          "daysAgo": 7
+        },
+        {
+          "id": "genesis-primary-care-mcconnelsville-rv2",
+          "author": "Neighbor from Malta",
+          "rating": 5,
+          "text": "They set me up with a video visit when my car broke down.",
+          "daysAgo": 16
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "genesis-primary-care-mcconnelsville-r1",
+        "providerId": "genesis-primary-care-mcconnelsville",
+        "kind": "equipment",
+        "label": "Point-of-care A1C analyzer",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      }
+    ],
+    "dataSource": "https://www.genesishcs.org/taxonomy/term/5261"
+  },
+  {
+    "id": "marietta-memorial-hospital",
+    "name": "Memorial Health System – Marietta Memorial Hospital",
+    "orgType": "hospital",
+    "address": "401 Matthew St, Marietta, OH 45750",
+    "town": "Marietta",
+    "county": "Washington",
+    "location": {
+      "lat": 39.4317,
+      "lng": -81.46454
+    },
+    "phone": "740-374-1400",
+    "website": "https://mhsystem.org/locations/hospital/marietta-memorial",
+    "services": [
+      "urgent_care",
+      "specialty",
+      "womens_health",
+      "diabetes_care",
+      "eye_care"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private"
+    ],
+    "acceptingNewPatients": false,
+    "lastConfirmedDaysAgo": 38,
+    "offersTelehealth": true,
+    "trust": {
+      "verifiedBy": [
+        "Washington County Health Dept"
+      ],
+      "rating": 4.4,
+      "reviewCount": 52,
+      "reviews": [
+        {
+          "id": "marietta-memorial-hospital-rv1",
+          "author": "Neighbor from Marietta",
+          "rating": 5,
+          "text": "Explained my diabetes numbers in plain language.",
+          "daysAgo": 3
+        },
+        {
+          "id": "marietta-memorial-hospital-rv2",
+          "author": "Neighbor from Belpre",
+          "rating": 3,
+          "text": "Good care once you are seen. Getting through on the phone took a few tries.",
+          "daysAgo": 12
+        },
+        {
+          "id": "marietta-memorial-hospital-rv3",
+          "author": "Neighbor from Lowell",
+          "rating": 5,
+          "text": "Short wait and the staff explained everything.",
+          "daysAgo": 30
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "marietta-memorial-hospital-r1",
+        "providerId": "marietta-memorial-hospital",
+        "kind": "equipment",
+        "label": "Portable ultrasound",
+        "availableDays": [
+          "Wed"
+        ]
+      },
+      {
+        "id": "marietta-memorial-hospital-r2",
+        "providerId": "marietta-memorial-hospital",
+        "kind": "personnel",
+        "label": "Nurse practitioner",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      }
+    ],
+    "dataSource": "https://mhsystem.org/locations/hospital/marietta-memorial"
+  },
+  {
+    "id": "hopewell-marietta-bh",
+    "name": "Hopewell Health Centers – Washington Behavioral Health (Marietta)",
+    "orgType": "behavioral_health",
+    "address": "207 Colegate Dr, Suite D, Marietta, OH 45750",
+    "town": "Marietta",
+    "county": "Washington",
+    "location": {
+      "lat": 39.42142,
+      "lng": -81.43418
+    },
+    "phone": "740-376-0930",
+    "website": "https://www.hopewellhealth.org/locations/",
+    "services": [
+      "behavioral_health"
+    ],
+    "insurances": [
+      "medicaid",
+      "medicare",
+      "private",
+      "sliding_scale"
+    ],
+    "acceptingNewPatients": false,
+    "lastConfirmedDaysAgo": 11,
+    "offersTelehealth": true,
+    "trust": {
+      "verifiedBy": [],
+      "rating": 4.2,
+      "reviewCount": 8,
+      "reviews": [
+        {
+          "id": "hopewell-marietta-bh-rv1",
+          "author": "Neighbor from Marietta",
+          "rating": 4,
+          "text": "Helped me sort out my Medicaid paperwork before the visit.",
+          "daysAgo": 4
+        }
+      ]
+    },
+    "resources": [
+      {
+        "id": "hopewell-marietta-bh-r1",
+        "providerId": "hopewell-marietta-bh",
+        "kind": "personnel",
+        "label": "Behavioral health counselor",
+        "availableDays": [
+          "Tue",
+          "Thu"
+        ]
+      },
+      {
+        "id": "hopewell-marietta-bh-r2",
+        "providerId": "hopewell-marietta-bh",
+        "kind": "equipment",
+        "label": "Telehealth cart",
+        "availableDays": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ]
+      }
     ],
     "dataSource": "https://www.hopewellhealth.org/locations/"
   }
