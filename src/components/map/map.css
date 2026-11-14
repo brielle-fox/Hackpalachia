@@ -1,0 +1,20 @@
+/* WS2 map styles. divIcon wrapper must not get Leaflet's default white box. */
+.cb-pin {
+  background: transparent;
+  border: 0;
+}
+
+.cb-map .leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgb(0 0 0 / 0.18);
+}
+.cb-map .leaflet-popup-content {
+  margin: 12px;
+  width: 232px !important;
+  font-family: inherit;
+}
+.cb-map .leaflet-container,
+.cb-map.leaflet-container {
+  font-family: inherit;
+  background: #ebeee5;
+}
