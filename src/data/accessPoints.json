@@ -1,0 +1,36 @@
+[
+  {
+    "id": "acpl-athens",
+    "name": "Athens Public Library (ACPL)",
+    "kind": "library",
+    "address": "30 Home St, Athens, OH 45701",
+    "town": "Athens",
+    "county": "Athens",
+    "location": { "lat": 39.33445, "lng": -82.08411 },
+    "hours": "Mon–Thu 9–8, Fri–Sat 9–5",
+    "status": "proposed_partner",
+    "hasPrivateRoom": true,
+    "hasHelper": false,
+    "devices": 3,
+    "openSlots": ["2026-11-17T11:00", "2026-11-18T15:00", "2026-11-20T10:00"],
+    "lastConfirmedDaysAgo": 2,
+    "dataSource": "https://www.myacpl.org/branches/"
+  },
+  {
+    "id": "acpl-glouster",
+    "name": "Glouster Public Library",
+    "kind": "library",
+    "address": "20 Toledo St, Glouster, OH 45732",
+    "town": "Glouster",
+    "county": "Athens",
+    "location": { "lat": 39.50015, "lng": -82.08723 },
+    "hours": "Mon–Thu 10–6, Fri 9–5, Sat 9–1",
+    "status": "proposed_partner",
+    "hasPrivateRoom": true,
+    "hasHelper": true,
+    "devices": 2,
+    "openSlots": ["2026-11-19T10:00", "2026-11-19T14:00", "2026-11-20T10:30", "2026-11-21T09:30"],
+    "lastConfirmedDaysAgo": 3,
+    "dataSource": "https://www.myacpl.org/branches/"
+  }
+]

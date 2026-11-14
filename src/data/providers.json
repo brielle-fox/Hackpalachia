@@ -1,0 +1,78 @@
+[
+  {
+    "id": "ohiohealth-obleness",
+    "name": "OhioHealth O'Bleness Hospital",
+    "orgType": "hospital",
+    "address": "55 Hospital Dr, Athens, OH 45701",
+    "town": "Athens",
+    "county": "Athens",
+    "location": { "lat": 39.32726, "lng": -82.1143 },
+    "services": ["urgent_care", "primary_care", "womens_health", "specialty", "diabetes_care"],
+    "insurances": ["medicaid", "medicare", "private"],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 6,
+    "offersTelehealth": true,
+    "trust": {
+      "verifiedBy": ["Athens City-County Health Dept"],
+      "rating": 4.2,
+      "reviewCount": 40,
+      "reviews": [
+        { "id": "obleness-rv1", "author": "Neighbor from Athens", "rating": 4, "text": "Short wait and the staff explained everything.", "daysAgo": 5 }
+      ]
+    },
+    "resources": [
+      { "id": "ohiohealth-obleness-r1", "providerId": "ohiohealth-obleness", "kind": "equipment", "label": "Portable retinal camera", "availableDays": ["Tue", "Thu"] },
+      { "id": "ohiohealth-obleness-r2", "providerId": "ohiohealth-obleness", "kind": "personnel", "label": "Retinal imaging technician", "availableDays": ["Tue", "Thu"] },
+      { "id": "ohiohealth-obleness-r3", "providerId": "ohiohealth-obleness", "kind": "equipment", "label": "Mobile clinic van" }
+    ],
+    "dataSource": "https://www.openstreetmap.org/search?query=55%20Hospital%20Dr%20Athens%20OH"
+  },
+  {
+    "id": "hopewell-nelsonville",
+    "name": "Hopewell Health Centers – Nelsonville Dental & Primary Care",
+    "orgType": "fqhc",
+    "address": "1950 Mount St. Marys Dr, Nelsonville, OH 45764",
+    "town": "Nelsonville",
+    "county": "Athens",
+    "location": { "lat": 39.46327, "lng": -82.24321 },
+    "phone": "740-797-2352",
+    "services": ["primary_care", "dental"],
+    "insurances": ["medicaid", "medicare", "private", "sliding_scale"],
+    "acceptingNewPatients": true,
+    "lastConfirmedDaysAgo": 1,
+    "offersTelehealth": true,
+    "trust": {
+      "verifiedBy": ["Athens City-County Health Dept"],
+      "rating": 4.5,
+      "reviewCount": 18,
+      "reviews": [
+        { "id": "hopewell-nelsonville-rv1", "author": "Neighbor from Nelsonville", "rating": 5, "text": "Took me as a new patient within two weeks.", "daysAgo": 3 }
+      ]
+    },
+    "resources": [
+      { "id": "hopewell-nelsonville-r1", "providerId": "hopewell-nelsonville", "kind": "personnel", "label": "Registered nurse" },
+      { "id": "hopewell-nelsonville-r2", "providerId": "hopewell-nelsonville", "kind": "personnel", "label": "Dental hygienist" }
+    ],
+    "dataSource": "https://www.hopewellhealth.org/locations/"
+  },
+  {
+    "id": "hopewell-pomeroy",
+    "name": "Hopewell Health Centers – Pomeroy Dental, Primary & Behavioral Health",
+    "orgType": "fqhc",
+    "address": "41865 Pomeroy Pike, Pomeroy, OH 45769",
+    "town": "Pomeroy",
+    "county": "Meigs",
+    "location": { "lat": 39.05579, "lng": -82.01299 },
+    "phone": "740-992-0540",
+    "services": ["primary_care", "dental", "behavioral_health"],
+    "insurances": ["medicaid", "medicare", "private", "sliding_scale"],
+    "acceptingNewPatients": false,
+    "lastConfirmedDaysAgo": 12,
+    "offersTelehealth": false,
+    "trust": { "verifiedBy": [], "rating": 4.1, "reviewCount": 9, "reviews": [] },
+    "resources": [
+      { "id": "hopewell-pomeroy-r1", "providerId": "hopewell-pomeroy", "kind": "personnel", "label": "Behavioral health counselor" }
+    ],
+    "dataSource": "https://www.hopewellhealth.org/locations/"
+  }
+]
