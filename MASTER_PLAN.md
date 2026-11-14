@@ -1,4 +1,4 @@
-# [ProductName] — Master Plan
+# [CareBridge] — Master Plan
 
 > **Hackpalachia Rural Health Hackathon · Athens, OH · Sat Nov 14, 2026**
 > Track: **Care Delivery** · Deliverables due **2:45 PM** (OneDrive) · Presenting from **3:00 PM**
