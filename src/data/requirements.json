@@ -100,6 +100,81 @@
    "windowEnd": "2026-12-04",
    "status": "open",
    "note": "Counseling intake for a Vinton County patient"
+  },
+  {
+   "id": "req-incoming-athens",
+   "createdByProviderId": "hopewell-athens",
+   "patientRef": "Patient #P-118",
+   "serviceType": "pediatrics",
+   "needs": [
+    {
+     "kind": "personnel",
+     "label": "Medical assistant"
+    },
+    {
+     "kind": "location",
+     "label": "Exam room"
+    }
+   ],
+   "nearTown": "The Plains",
+   "nearLocation": {
+    "lat": 39.37009,
+    "lng": -82.13237
+   },
+   "windowStart": "2026-11-17",
+   "windowEnd": "2026-11-21",
+   "status": "matched",
+   "note": "Well-child visit and catch-up shots; our exam rooms are booked through Friday"
+  },
+  {
+   "id": "req-incoming-health-dept",
+   "createdByProviderId": "athens-city-county-health-dept",
+   "patientRef": "Cohort: 20 residents (flu shots)",
+   "serviceType": "primary_care",
+   "needs": [
+    {
+     "kind": "personnel",
+     "label": "Registered nurse"
+    },
+    {
+     "kind": "location",
+     "label": "Exam room"
+    }
+   ],
+   "nearTown": "The Plains",
+   "nearLocation": {
+    "lat": 39.37009,
+    "lng": -82.13237
+   },
+   "windowStart": "2026-11-18",
+   "windowEnd": "2026-11-18",
+   "status": "matched",
+   "note": "Walk-in flu clinic for The Plains residents; we need a second nurse and a room on site"
+  },
+  {
+   "id": "req-incoming-lancer",
+   "createdByProviderId": "hopewell-lancer",
+   "patientRef": "Cohort: 9 patients (A1C check)",
+   "serviceType": "diabetes_care",
+   "needs": [
+    {
+     "kind": "personnel",
+     "label": "Medical assistant"
+    },
+    {
+     "kind": "equipment",
+     "label": "Point-of-care A1C analyzer"
+    }
+   ],
+   "nearTown": "Stewart",
+   "nearLocation": {
+    "lat": 39.30813,
+    "lng": -81.89458
+   },
+   "windowStart": "2026-11-19",
+   "windowEnd": "2026-12-03",
+   "status": "matched",
+   "note": "Diabetes check-in day; we have the room but no analyzer and our MA is out"
   }
  ],
  "matches": [
@@ -162,6 +237,97 @@
    "score": 96,
    "approxDriveMinutes": 16,
    "proposedSiteName": "Hopewell Health Centers \u2013 Main Clinic (Appalachian Family Life Center)",
+   "status": "proposed"
+  },
+  {
+   "id": "req-incoming-athens-m0",
+   "requirementId": "req-incoming-athens",
+   "partnerProviderIds": [
+    "hopewell-the-plains"
+   ],
+   "coverage": [
+    {
+     "need": {
+      "kind": "personnel",
+      "label": "Medical assistant"
+     },
+     "providerId": "hopewell-the-plains",
+     "resourceId": "hopewell-the-plains-r2"
+    },
+    {
+     "need": {
+      "kind": "location",
+      "label": "Exam room"
+     },
+     "providerId": "hopewell-the-plains",
+     "resourceId": "hopewell-the-plains-r3"
+    }
+   ],
+   "uncovered": [],
+   "score": 94,
+   "approxDriveMinutes": 11,
+   "proposedSiteName": "Hopewell Health Centers \u2013 Main Clinic (Appalachian Family Life Center)",
+   "status": "proposed"
+  },
+  {
+   "id": "req-incoming-health-dept-m0",
+   "requirementId": "req-incoming-health-dept",
+   "partnerProviderIds": [
+    "hopewell-the-plains"
+   ],
+   "coverage": [
+    {
+     "need": {
+      "kind": "personnel",
+      "label": "Registered nurse"
+     },
+     "providerId": "hopewell-the-plains",
+     "resourceId": "hopewell-the-plains-r1"
+    },
+    {
+     "need": {
+      "kind": "location",
+      "label": "Exam room"
+     },
+     "providerId": "hopewell-the-plains",
+     "resourceId": "hopewell-the-plains-r3"
+    }
+   ],
+   "uncovered": [],
+   "score": 91,
+   "approxDriveMinutes": 12,
+   "proposedSiteName": "Hopewell Health Centers \u2013 Main Clinic (Appalachian Family Life Center)",
+   "status": "proposed"
+  },
+  {
+   "id": "req-incoming-lancer-m0",
+   "requirementId": "req-incoming-lancer",
+   "partnerProviderIds": [
+    "hopewell-the-plains",
+    "ou-heritage-community-clinic"
+   ],
+   "coverage": [
+    {
+     "need": {
+      "kind": "personnel",
+      "label": "Medical assistant"
+     },
+     "providerId": "hopewell-the-plains",
+     "resourceId": "hopewell-the-plains-r2"
+    },
+    {
+     "need": {
+      "kind": "equipment",
+      "label": "Point-of-care A1C analyzer"
+     },
+     "providerId": "ou-heritage-community-clinic",
+     "resourceId": "ou-heritage-community-clinic-r3"
+    }
+   ],
+   "uncovered": [],
+   "score": 82,
+   "approxDriveMinutes": 28,
+   "proposedSiteName": "Hopewell Health Centers \u2013 Lancer Care Clinic",
    "status": "proposed"
   }
  ]

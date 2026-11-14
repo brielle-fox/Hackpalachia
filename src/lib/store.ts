@@ -125,7 +125,8 @@ export const useStore = create<AppState>()(
       name: 'hub-demo-v1',
       // Bump whenever seed JSON changes so browsers with an older saved demo reseed instead of
       // showing stale data. v2: real WS2 providers/access points + WS3 personas.
-      version: 2,
+      // v3: extra incoming collaboration requests for Hopewell The Plains.
+      version: 3,
       migrate: () => seedState() as unknown as AppState,
     },
   ),
