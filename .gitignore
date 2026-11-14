@@ -1,0 +1,23 @@
+# Hackathon source materials (large / not ours to publish)
+*.zip
+
+# Dependencies & builds
+node_modules/
+dist/
+.vercel/
+
+# Env & local config
+.env
+.env.*
+!.env.example
+
+# Logs & OS / editor junk
+*.log
+npm-debug.log*
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# 37 MB source report: too heavy for the repo (summarized in MASTER_PLAN.md §10)
+Athens Hackathon/FINAL_26-02-12_Nursing-Homes-in-Ohio_508.pdf
