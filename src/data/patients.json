@@ -1,0 +1,19 @@
+[
+ {
+  "id": "p-linda",
+  "displayName": "Linda (fictional)",
+  "age": 52,
+  "town": "Glouster",
+  "location": {
+   "lat": 39.50313,
+   "lng": -82.08459
+  },
+  "insurance": "medicaid",
+  "hasHomeInternet": true,
+  "portalConnected": false,
+  "needs": [
+   "primary_care",
+   "diabetes_care"
+  ]
+ }
+]

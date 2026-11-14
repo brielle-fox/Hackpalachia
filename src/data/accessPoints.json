@@ -1,0 +1,377 @@
+[
+ {
+  "id": "acpl-athens",
+  "name": "Athens Public Library (ACPL)",
+  "kind": "library",
+  "address": "30 Home St, Athens, OH 45701",
+  "town": "Athens",
+  "county": "Athens",
+  "location": {
+   "lat": 39.33445,
+   "lng": -82.08411
+  },
+  "hours": "Mon\u2013Thu 9\u20138, Fri\u2013Sat 9\u20135",
+  "status": "proposed_partner",
+  "hasPrivateRoom": false,
+  "hasHelper": false,
+  "devices": 4,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 3,
+  "dataSource": "https://www.myacpl.org/branches/"
+ },
+ {
+  "id": "acpl-nelsonville",
+  "name": "Nelsonville Public Library (ACPL main branch)",
+  "kind": "library",
+  "address": "95 W Washington St, Nelsonville, OH 45764",
+  "town": "Nelsonville",
+  "county": "Athens",
+  "location": {
+   "lat": 39.46077,
+   "lng": -82.23398
+  },
+  "hours": "Mon\u2013Thu 10\u20136, Fri 9\u20135, Sat 9\u20131",
+  "status": "proposed_partner",
+  "hasPrivateRoom": true,
+  "hasHelper": true,
+  "devices": 1,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 7,
+  "dataSource": "https://www.myacpl.org/branches/"
+ },
+ {
+  "id": "acpl-the-plains",
+  "name": "The Plains Public Library",
+  "kind": "library",
+  "address": "14 S Plains Rd, The Plains, OH 45780",
+  "town": "The Plains",
+  "county": "Athens",
+  "location": {
+   "lat": 39.35006,
+   "lng": -82.13598
+  },
+  "hours": "Mon\u2013Thu 10\u20136, Fri 9\u20135, Sat 9\u20131",
+  "status": "proposed_partner",
+  "hasPrivateRoom": true,
+  "hasHelper": false,
+  "devices": 1,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 13,
+  "dataSource": "https://www.myacpl.org/branches/"
+ },
+ {
+  "id": "acpl-glouster",
+  "name": "Glouster Public Library",
+  "kind": "library",
+  "address": "20 Toledo St, Glouster, OH 45732",
+  "town": "Glouster",
+  "county": "Athens",
+  "location": {
+   "lat": 39.50015,
+   "lng": -82.08723
+  },
+  "hours": "Mon\u2013Thu 10\u20136, Fri 9\u20135, Sat 9\u20131",
+  "status": "proposed_partner",
+  "hasPrivateRoom": true,
+  "hasHelper": true,
+  "devices": 1,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 14,
+  "dataSource": "https://www.myacpl.org/branches/"
+ },
+ {
+  "id": "acpl-wells-albany",
+  "name": "Wells Public Library (Albany)",
+  "kind": "library",
+  "address": "5200 Washington Rd, Albany, OH 45710",
+  "town": "Albany",
+  "county": "Athens",
+  "location": {
+   "lat": 39.22541,
+   "lng": -82.20574
+  },
+  "hours": "Mon\u2013Fri 10\u20136, Sat 9\u20131",
+  "status": "proposed_partner",
+  "hasPrivateRoom": true,
+  "hasHelper": true,
+  "devices": 2,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 7,
+  "dataSource": "https://www.myacpl.org/branches/"
+ },
+ {
+  "id": "acpl-chauncey",
+  "name": "Chauncey Public Library",
+  "kind": "library",
+  "address": "29 Converse St, Chauncey, OH 45719",
+  "town": "Chauncey",
+  "county": "Athens",
+  "location": {
+   "lat": 39.39914,
+   "lng": -82.12867
+  },
+  "hours": "Mon\u2013Fri 10\u20136, Sat 9\u20131",
+  "status": "proposed_partner",
+  "hasPrivateRoom": true,
+  "hasHelper": true,
+  "devices": 3,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 1,
+  "dataSource": "https://www.myacpl.org/branches/"
+ },
+ {
+  "id": "acpl-coolville",
+  "name": "Coolville Public Library",
+  "kind": "library",
+  "address": "26401 Main St, Coolville, OH 45723",
+  "town": "Coolville",
+  "county": "Athens",
+  "location": {
+   "lat": 39.22197,
+   "lng": -81.79694
+  },
+  "hours": "Mon\u2013Thu 10\u20136, Fri 9\u20135",
+  "status": "proposed_partner",
+  "hasPrivateRoom": true,
+  "hasHelper": true,
+  "devices": 4,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 7,
+  "dataSource": "https://www.myacpl.org/branches/"
+ },
+ {
+  "id": "usac-athens-community-center",
+  "name": "United Seniors of Athens County (Athens Community Center)",
+  "kind": "senior_center",
+  "address": "701 E State St, Suite 101, Athens, OH 45701",
+  "town": "Athens",
+  "county": "Athens",
+  "location": {
+   "lat": 39.33648,
+   "lng": -82.07537
+  },
+  "hours": "not published; use \"Mon\u2013Fri 9\u20134 (confirm)\"",
+  "status": "proposed_partner",
+  "hasPrivateRoom": true,
+  "hasHelper": true,
+  "devices": 2,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 2,
+  "dataSource": "https://www.aaa7.org/county-directories"
+ },
+ {
+  "id": "fbc-nelsonville",
+  "name": "First Baptist Church of Nelsonville (candidate)",
+  "kind": "church",
+  "address": "15 Adams St, Nelsonville, OH 45764",
+  "town": "Nelsonville",
+  "county": "Athens",
+  "location": {
+   "lat": 39.46435,
+   "lng": -82.23728
+  },
+  "hours": "not published",
+  "status": "proposed_partner",
+  "hasPrivateRoom": true,
+  "hasHelper": false,
+  "devices": 4,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 12,
+  "dataSource": "https://directory.plentiful.org/ohio/nelsonville/the-first-baptist-church-of-nelsonville-c6647ce5"
+ },
+ {
+  "id": "bishopville-church-of-christ",
+  "name": "Bishopville Church of Christ (candidate)",
+  "kind": "church",
+  "address": "6555 State Route 78, Glouster, OH 45732",
+  "town": "Bishopville (Glouster mailing address)",
+  "county": "Morgan",
+  "location": {
+   "lat": 39.51318,
+   "lng": -82.04774
+  },
+  "hours": "not published",
+  "status": "proposed_partner",
+  "hasPrivateRoom": true,
+  "hasHelper": true,
+  "devices": 4,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 10,
+  "dataSource": "https://directory.plentiful.org/ohio/glouster/bishopville-church-of-christ-food-pantry-c222d1a6"
+ },
+ {
+  "id": "meigs-library-pomeroy",
+  "name": "Meigs County District Public Library \u2013 Pomeroy",
+  "kind": "library",
+  "address": "216 W Main St, Pomeroy, OH 45769",
+  "town": "Pomeroy",
+  "county": "Meigs",
+  "location": {
+   "lat": 39.02576,
+   "lng": -82.03664
+  },
+  "hours": "confirm on site",
+  "status": "proposed_partner",
+  "hasPrivateRoom": true,
+  "hasHelper": false,
+  "devices": 2,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 0,
+  "dataSource": "https://www.meigslibrary.org/findinfo"
+ },
+ {
+  "id": "herbert-wescoat-library",
+  "name": "Herbert Wescoat Memorial Library",
+  "kind": "library",
+  "address": "120 N Market St, McArthur, OH 45651",
+  "town": "McArthur",
+  "county": "Vinton",
+  "location": {
+   "lat": 39.24747,
+   "lng": -82.47852
+  },
+  "hours": "confirm on site",
+  "status": "proposed_partner",
+  "hasPrivateRoom": false,
+  "hasHelper": true,
+  "devices": 1,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 8,
+  "dataSource": "https://www.vintoncountypublic.lib.oh.us/node/482"
+ },
+ {
+  "id": "logan-hocking-library",
+  "name": "Logan-Hocking County District Library",
+  "kind": "library",
+  "address": "230 E Main St, Logan, OH 43138",
+  "town": "Logan",
+  "county": "Hocking",
+  "location": {
+   "lat": 39.54019,
+   "lng": -82.40508
+  },
+  "hours": "confirm on site",
+  "status": "proposed_partner",
+  "hasPrivateRoom": true,
+  "hasHelper": false,
+  "devices": 2,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 13,
+  "dataSource": "https://www.ohiolegalhelp.org/resource/logan-hocking-county-district-library"
+ },
+ {
+  "id": "perry-county-library",
+  "name": "Perry County District Library \u2013 New Lexington",
+  "kind": "library",
+  "address": "117 S Jackson St, New Lexington, OH 43764",
+  "town": "New Lexington",
+  "county": "Perry",
+  "location": {
+   "lat": 39.71444,
+   "lng": -82.2057
+  },
+  "hours": "confirm on site",
+  "status": "proposed_partner",
+  "hasPrivateRoom": true,
+  "hasHelper": false,
+  "devices": 2,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 4,
+  "dataSource": "https://www.pcdl.org/about"
+ },
+ {
+  "id": "kate-love-simpson-library",
+  "name": "Kate Love Simpson Morgan County Library",
+  "kind": "library",
+  "address": "358 E Main St, McConnelsville, OH 43756",
+  "town": "McConnelsville",
+  "county": "Morgan",
+  "location": {
+   "lat": 39.64852,
+   "lng": -81.84896
+  },
+  "hours": "confirm on site",
+  "status": "proposed_partner",
+  "hasPrivateRoom": true,
+  "hasHelper": true,
+  "devices": 3,
+  "openSlots": [
+   "2026-11-17T10:00",
+   "2026-11-18T14:00",
+   "2026-11-19T10:00",
+   "2026-11-20T11:00"
+  ],
+  "lastConfirmedDaysAgo": 4,
+  "dataSource": "https://www.morgan.lib.oh.us/about"
+ }
+]
